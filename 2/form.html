@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="author" content="Semkovich Maria">
+    <title>Sedona</title>
+  <base href="https://htmlacademy-adaptive.github.io/425601-sedona-27/2/">
+</head>
+<body class="page-body">
+    <header class="form-header">
+        <a class="form-header__logo">
+            <img class="form-header__logo-image" src="icon-menu.svg" width="185" height="96" alt="City of Sedona">
+        </a>
+        <nav class="form-nav">
+            <button class="form-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="form-nav__wrapper">
+                <ul class="form-nav__list site-list">
+                    <li class="site-list__item site-list__item--current">
+                        <a href="main.html>
+                            Главная
+                        </a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="photo.html">
+                            Фото и видео
+                        </a>
+                    </li>
+                    <li class="site-list__item">
+                        <a">
+                            Форма отзыва
+                        </a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">
+                            HTML ACADEMY
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<main class="form-container">
+  <h1 class="visually-hidden">Sedona</h1>
+  <section class="form-sedona">
+    <div class="form-wrapper">
+      <header class="form-name">
+        <h3 class="form-name__header">Оставьте свой отзыв</h3>
+        <p class="form-name__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </header>
+    </div>
+  </section>
+  <section class="form-body">
+    <div class="form-body-wrapper">
+        <h3 class="form-body__header">Представьтесь:</h3>
+        <form action="#" method="post">
+          <label class="nickname">ИМЯ*:<br>
+            <input type="text" name="username" value="Пётр"><br><br>
+          </label>
+          <label class="nickname">ФАМИЛИЯ*:<br>
+            <input type="text" name="username" value="Пустота"><br><br>
+          </label>
+          <label class="nickname">ОТЧЕСТВО:<br>
+            <input type="text" name="username" value="Викторович"><br>
+          </label>
+        </form>
+    </div>
+  </section>
+  <section class="form-contacts">
+    <div class="form-contacts-wrapper">
+        <h3 class="form-contacts__header">Контактная информация:</h3>
+        <form action="#" method="post">
+          <label for="tel">Контактный телефон*:</label><br>
+          <input type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
+          <img class="form-contacts-img" src="phone.svg" width="58" height="58" alt="logophone">
+          <br><br>
+          <label class="nickname">Электронная почта*:<br>
+            <input type="email" placeholder="Введите e-mail">
+            <img class="form-contacts-img" src="mail.svg" width="58" height="58" alt="logomail">
+          </label>
+        </form>
+    </div>
+  </section>
+  <section class="opinion">
+    <div class="opinion-wrapper">
+      <h3 class="opinion__header">Ваше Общее впечатление:</h3>
+      <form action="#" method="post">
+        <label class="opinion"><input type="radio" name="opinion1" checked>Скорее положительное
+        </label><br><br>
+        <label class="opinion"><input type="radio" name="opinion2">Скорее отрицательное
+        </label><br><br>
+        <label class="opinion"><input type="radio" name="opinion3">Затрудняюсь ответить
+        </label>
+      </form>
+    </div>
+  </section>
+  <section class="places">
+    <div class="places-wrapper">
+      <h3 class="places__header">посещенные достопримечательности:</h3>
+      <form action="#" method="post">
+        <label class="places"><input type="checkbox" name="places1" checked>Мост Дьявола
+        </label><br><br>
+        <label class="places"><input type="checkbox" name="places2" checked>Гора-Колокол
+        </label><br><br>
+        <label class="places"><input type="checkbox" name="places3" checked>Слайд-парк
+        </label><br><br>
+        <label class="places"><input type="checkbox" name="places4">Красные скалы
+        </label>
+      </form>
+    </div>
+  </section>
+  <section class="emotions">
+    <div class="emotions-wrapper">
+      <h3 class="emotions__header">Опишите свои эмоции:</h3>
+      <form action="#" method="post">
+        <label class="emotions"><textarea rows="5">Опишите подробно все свои восторги</textarea>
+        </label>
+      </form>
+    </div>
+  </section>
+  <section class="button-form">
+    <form action="#" method="post">
+      <label class="button-form"><input type="submit" value="Отправить отзыв"><br>* — обязательные поля
+      </label>
+    </form>
+  </section>
+</main>
+<footer class="main-footer">
+  <div class="main-footer__wrapper">
+    <div class="main-footer__hash">
+      <a class="hash" href="#">
+        <b class="hash__text">#visitSEDONA</b>
+      </a>
+    </div>
+    <div class="main-footer__social social">
+      <b class="social__title"></b>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://youtube.com/user/htmlacademy"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="#">
+        <img class="copyright-img" src="htmlacademy.svg" width="26.9" height="34.1" alt="htmlacademy logo">
+      </a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
