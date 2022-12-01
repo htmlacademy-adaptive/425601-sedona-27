@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="keywords" content="Седона, Sedona, htmlacademy, проектр для учебы">
+    <meta name="keywords" content="Седона, Sedona, htmlacademy, проект для учебы">
     <meta name="description" content="Обучение HTML и CSS. Адаптивная вёрстка и автоматизация">
     <meta name="author" content="Semkovich Maria">
     <title>Sedona</title>
@@ -42,26 +42,25 @@
                 </ul>
             </div>
         </nav>
+        <div class="main-header-background">
+          <img class="main-img" src="img/back-mobile.jpg" alt="Главное фото города Седона" width="901" height="389">
+        </div>
     </header>
 <main class="catalog-container">
   <h1 class="visually-hidden">Sedona</h1>
   <section class="photo">
     <div class="photo-wrapper">
-      <header class="photo__header">
-        <h2 class="visually-hidden">
+        <h2>
           Фото и видео
         </h2>
         <p class="photo-description">
           Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
         </p>
-      </header>
     </div>
   </section>
   <section class="content">
     <div class="content-wrapping">
-        <p class="content-photo">
-          <img class="content__photos" src="photo-1-mobile.jpg" width="280" height="280" alt="Welcome">
-        </p>
+          <img class="content__photos" src="photo-1-mobile.jpg" width="280" height="280" alt="Живописная дорога уходит в закат">
         <p class="content-description">
           неродные просторы
         </p>
@@ -69,16 +68,12 @@
           Автор фото: Борис
         </p>
         <p class="content-reaction">
-          <img class="content-like" src="like-icon.svg" width="23" height="21" alt="Like">
-        </p>
-        <p class="content-counter">
-          1350
+            <svg class="photo__like" src="img/like-icon.svg" width="23" height="21" viewBox="0 0 22 20"></svg>
+            <span class="photo__likes-number">1350</span>
         </p>
     </div>
     <div class="content-wrapping">
-      <p class="content-photo">
-        <img class="content__photos" src="photo-2-mobile.jpg" width="280" height="280" alt="Flowers">
-      </p>
+        <img class="content__photos" src="photo-2-mobile.jpg" width="280" height="280" alt="Кактус на фоне гор">
       <p class="content-description">
         Местная растительность
       </p>
@@ -86,16 +81,12 @@
         Автор фото: Сергей
       </p>
       <p class="content-reaction">
-        <img class="content-like" src="like-icon.svg" width="23" height="21" alt="Like">
-      </p>
-      <p class="content-counter">
-        143
-      </p>
+        <svg class="photo__like" src="img/like-icon.svg" width="23" height="21" viewBox="0 0 22 20"></svg>
+        <span class="photo__likes-number">143</span>
+    </p>
     </div>
     <div class="content-wrapping">
-      <p class="content-photo">
-        <img class="content__photos" src="photo-3-mobile.jpg" width="280" height="280" alt="Road">
-      </p>
+        <img class="content__photos" src="photo-3-mobile.jpg" width="280" height="280" alt="Дорога-серпантин поднимается в горы">
       <p class="content-description">
         Дорога на север
       </p>
@@ -103,16 +94,12 @@
         Автор фото: Петр
       </p>
       <p class="content-reaction">
-        <img class="content-like" src="like-icon.svg" width="23" height="21" alt="Like">
-      </p>
-      <p class="content-counter">
-        96
-      </p>
+        <svg class="photo__like" src="img/like-icon.svg" width="23" height="21" viewBox="0 0 22 20"></svg>
+        <span class="photo__likes-number">96</span>
+    </p>
     </div>
     <div class="content-wrapping">
-      <p class="content-photo">
-        <img class="content__photos" src="photo-4-desktop 1" width="280" height="280" alt="Bridge">
-      </p>
+        <img class="content__photos" src="photo-4-desktop 1" width="280" height="280" alt="Мост дьявола из многовековых скал">
       <p class="content-description">
         Мост дьявола
       </p>
@@ -120,52 +107,43 @@
         Автор фото: Антон
       </p>
       <p class="content-reaction">
-        <img class="content-like" src="like-icon.svg" width="23" height="21" alt="Like">
-      </p>
-      <p class="content-counter">
-        254
-      </p>
+        <svg class="photo__like" src="img/like-icon.svg" width="23" height="21" viewBox="0 0 22 20"></svg>
+        <span class="photo__likes-number">254</span>
+    </p>
     </div>
   </section>
   <section class="nodoubt">
-    <div class="nodoubt-wrapping">
-      <p class="nodoubt-title">
+      <h3 class="nodoubt-title">
         Все еще сомневаетесь?
-      </p>
+      </h3>
       <p class="nodoubt-description">
         Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
       <p class="nodoubt-video">
-        <img class="nodoubt-video" src="video-mobile.jpg" width="280" height="177" alt="Video">
+        <video width="280" height="177" controls="controls" poster="video-mobile.jpg"></video>
       </p>
-    </div>
   </section>
 </main>
 <footer class="main-footer">
   <div class="main-footer__wrapper">
-    <div class="main-footer__hash">
-      <a class="hash" href="#">
-        <b class="hash__text">#visitSEDONA</b>
-      </a>
-    </div>
+    <div class="hashtag">#visitsedona</div>
     <div class="main-footer__social social">
-      <b class="social__title"></b>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"></a>
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" alt="ссылка на страницу вконтакте"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" alt="ссылка на страницу в телеграмме"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://youtube.com/user/htmlacademy"></a>
+          <a class="social__link social__link--youtube" href="https://youtube.com/user/htmlacademy"  alt="ссылка на страницу в ютуб"></a>
         </li>
       </ul>
     </div>
     <div class="main-footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="#">
-        <img class="copyright-img" src="htmlacademy.svg" width="26.9" height="34.1" alt="htmlacademy logo">
+        <img class="copyright-img" src="htmlacademy.svg" width="27" height="34" alt="htmlacademy logo">
       </a>
     </div>
   </div>

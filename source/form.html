@@ -42,6 +42,9 @@
                 </ul>
             </div>
         </nav>
+        <div class="main-header-background">
+          <img class="main-img" src="img/back-mobile.jpg" alt="Главное фото города Седона" width="901" height="389">
+        </div>
     </header>
 <main class="form-container">
   <h1 class="visually-hidden">Sedona</h1>
@@ -53,80 +56,78 @@
       </header>
     </div>
   </section>
+  <form action="https://echo.htmlacademy.ru/" method="post">
   <section class="form-body">
     <div class="form-body-wrapper">
+      <fieldset class="form-body">
         <h3 class="form-body__header">Представьтесь:</h3>
-        <form action="#" method="post">
-          <label class="nickname">ИМЯ*:<br>
-            <input type="text" name="username" value="Пётр"><br><br>
+
+          <label class="nickname">ИМЯ*:
+            <input type="text" name="username" value="Пётр" required>
           </label>
-          <label class="nickname">ФАМИЛИЯ*:<br>
-            <input type="text" name="username" value="Пустота"><br><br>
+          <label class="nickname">ФАМИЛИЯ*:
+            <input type="text" name="username" value="Пустота" required>
           </label>
-          <label class="nickname">ОТЧЕСТВО:<br>
-            <input type="text" name="username" value="Викторович"><br>
+          <label class="nickname">ОТЧЕСТВО:
+            <input type="text" name="username" value="Викторович">
           </label>
-        </form>
+      </fieldset>
     </div>
   </section>
   <section class="form-contacts">
     <div class="form-contacts-wrapper">
+      <fieldset class="form-contacts">
         <h3 class="form-contacts__header">Контактная информация:</h3>
-        <form action="#" method="post">
-          <label for="tel">Контактный телефон*:</label><br>
-          <input type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
-          <img class="form-contacts-img" src="phone.svg" width="58" height="58" alt="logophone">
-          <br><br>
-          <label class="nickname">Электронная почта*:<br>
-            <input type="email" placeholder="Введите e-mail">
-            <img class="form-contacts-img" src="mail.svg" width="58" height="58" alt="logomail">
+          <label for="tel">Контактный телефон*:</label>
+          <input type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+          <label class="nickname">Электронная почта*:
+            <input type="email" placeholder="Введите e-mail" required>
           </label>
-        </form>
+      </fieldset>
     </div>
   </section>
   <section class="opinion">
     <div class="opinion-wrapper">
+      <fieldset class="opinion">
       <h3 class="opinion__header">Ваше Общее впечатление:</h3>
-      <form action="#" method="post">
         <label class="opinion"><input type="radio" name="opinion1" checked>Скорее положительное
-        </label><br><br>
+        </label>
         <label class="opinion"><input type="radio" name="opinion2">Скорее отрицательное
-        </label><br><br>
+        </label>
         <label class="opinion"><input type="radio" name="opinion3">Затрудняюсь ответить
         </label>
-      </form>
+      </fieldset>
     </div>
   </section>
   <section class="places">
     <div class="places-wrapper">
+      <fieldset class="places">
       <h3 class="places__header">посещенные достопримечательности:</h3>
-      <form action="#" method="post">
         <label class="places"><input type="checkbox" name="places1" checked>Мост Дьявола
-        </label><br><br>
+        </label>
         <label class="places"><input type="checkbox" name="places2" checked>Гора-Колокол
-        </label><br><br>
+        </label>
         <label class="places"><input type="checkbox" name="places3" checked>Слайд-парк
-        </label><br><br>
+        </label>
         <label class="places"><input type="checkbox" name="places4">Красные скалы
         </label>
-      </form>
+      </fieldset>
     </div>
   </section>
   <section class="emotions">
     <div class="emotions-wrapper">
+      <fieldset class="places">
       <h3 class="emotions__header">Опишите свои эмоции:</h3>
-      <form action="#" method="post">
         <label class="emotions"><textarea rows="5">Опишите подробно все свои восторги</textarea>
         </label>
-      </form>
+      </fieldset>
     </div>
   </section>
   <section class="button-form">
-    <form action="#" method="post">
       <label class="button-form"><input type="submit" value="Отправить отзыв"><br>* — обязательные поля
       </label>
-    </form>
   </section>
+  </form>
 </main>
 <footer class="main-footer">
   <div class="main-footer__wrapper">
@@ -159,4 +160,3 @@
 </footer>
 </body>
 </html>
-
