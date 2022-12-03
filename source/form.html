@@ -49,60 +49,43 @@
 <main class="form-container">
   <h1 class="visually-hidden">Sedona</h1>
   <section class="form-sedona">
-    <div class="form-wrapper">
       <header class="form-name">
         <h3 class="form-name__header">Оставьте свой отзыв</h3>
         <p class="form-name__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </header>
-    </div>
-  </section>
   <form action="https://echo.htmlacademy.ru/" method="post">
-  <section class="form-body">
-    <div class="form-body-wrapper">
       <fieldset class="form-body">
-        <h3 class="form-body__header">Представьтесь:</h3>
-
-          <label class="nickname">ИМЯ*:
+        <legend class="form-body__header">Представьтесь:</legend>
+          <label class="nickname">Имя*:
             <input type="text" name="username" value="Пётр" required>
           </label>
-          <label class="nickname">ФАМИЛИЯ*:
+          <label class="nickname">Фамилия*:
             <input type="text" name="username" value="Пустота" required>
           </label>
-          <label class="nickname">ОТЧЕСТВО:
+          <label class="nickname">Отчество:
             <input type="text" name="username" value="Викторович">
           </label>
       </fieldset>
-    </div>
-  </section>
-  <section class="form-contacts">
-    <div class="form-contacts-wrapper">
       <fieldset class="form-contacts">
-        <h3 class="form-contacts__header">Контактная информация:</h3>
-          <label for="tel">Контактный телефон*:</label>
-          <input type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+        <legend class="form-contacts__header">Контактная информация:</legend>
+          <label class="nickname">Контактный телефон*:
+            <input type="tel" name="client_tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+          </label>
           <label class="nickname">Электронная почта*:
-            <input type="email" placeholder="Введите e-mail" required>
+            <input type="email" name="client_email" placeholder="Введите e-mail" required>
           </label>
       </fieldset>
-    </div>
-  </section>
-  <section class="opinion">
-    <div class="opinion-wrapper">
       <fieldset class="opinion">
-      <h3 class="opinion__header">Ваше Общее впечатление:</h3>
-        <label class="opinion"><input type="radio" name="opinion1" checked>Скорее положительное
+      <legend class="opinion__header">Ваше Общее впечатление:</legend>
+        <label class="opinion"><input type="radio" name="opinion" value="positively" checked>Скорее положительное
         </label>
-        <label class="opinion"><input type="radio" name="opinion2">Скорее отрицательное
+        <label class="opinion"><input type="radio" name="opinion" value="negatively">Скорее отрицательное
         </label>
-        <label class="opinion"><input type="radio" name="opinion3">Затрудняюсь ответить
+        <label class="opinion"><input type="radio" name="opinion" value="difficult">Затрудняюсь ответить
         </label>
       </fieldset>
-    </div>
-  </section>
-  <section class="places">
-    <div class="places-wrapper">
       <fieldset class="places">
-      <h3 class="places__header">посещенные достопримечательности:</h3>
+      <legend class="places__header">посещенные достопримечательности:</legend>
         <label class="places"><input type="checkbox" name="places1" checked>Мост Дьявола
         </label>
         <label class="places"><input type="checkbox" name="places2" checked>Гора-Колокол
@@ -112,41 +95,35 @@
         <label class="places"><input type="checkbox" name="places4">Красные скалы
         </label>
       </fieldset>
-    </div>
-  </section>
-  <section class="emotions">
-    <div class="emotions-wrapper">
       <fieldset class="places">
-      <h3 class="emotions__header">Опишите свои эмоции:</h3>
-        <label class="emotions"><textarea rows="5">Опишите подробно все свои восторги</textarea>
-        </label>
+      <legend class="places__emotions">Опишите свои эмоции:</legend>
+        <label class="visually-hidden" for="impression">Опишите свои эмоции:</label>
+        <textarea class="emotions" name="emotions" id="impression" rows="5">Опишите подробно все свои восторги</textarea>
       </fieldset>
-    </div>
-  </section>
-  <section class="button-form">
-      <label class="button-form"><input type="submit" value="Отправить отзыв"><br>* — обязательные поля
-      </label>
-  </section>
+        <button class="button-form" type="submit">Отправить отзыв</button>
+        <span class="form-subj">* — обязательные поля</span>
   </form>
+  </section>
 </main>
 <footer class="main-footer">
-  <div class="main-footer__wrapper">
     <div class="main-footer__hash">
       <a class="hash" href="#">
         <b class="hash__text">#visitSEDONA</b>
       </a>
     </div>
     <div class="main-footer__social social">
-      <b class="social__title"></b>
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"></a>
+          <span class="visually-hidden">Ссылка на страницу соцсети ВКонтакте</span>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
+          <span class="visually-hidden">Ссылка на страницу мессенджера Телеграмм</span>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://youtube.com/user/htmlacademy"></a>
+          <span class="visually-hidden">Ссылка на страницу Ютуб</span>
         </li>
       </ul>
     </div>
@@ -156,7 +133,6 @@
         <img class="copyright-img" src="htmlacademy.svg" width="26.9" height="34.1" alt="htmlacademy logo">
       </a>
     </div>
-  </div>
 </footer>
 </body>
 </html>
