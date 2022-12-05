@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Седона, Sedona, htmlacademy, проектр для учебы, form">
+    <meta name="description" content="Обучение HTML и CSS. Адаптивная вёрстка и автоматизация">
+    <meta name="author" content="Semkovich Maria">
+    <title>Sedona</title>
+</head>
+<body class="page-body">
+    <header class="form-header">
+        <a class="form-header__logo">
+            <img class="form-header__logo-image" src="icon-menu.svg" width="185" height="96" alt="City of Sedona">
+        </a>
+        <nav class="form-nav">
+            <button class="form-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="form-nav__wrapper">
+                <ul class="form-nav__list site-list">
+                    <li class="site-list__item site-list__item--current">
+                        <a href="index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="catalog.html">
+                            Фото и видео
+                        </a>
+                    </li>
+                    <li class="site-list__item">
+                        <a>
+                            Форма отзыва
+                        </a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="https://htmlacademy.ru/">
+                            HTML Academy
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-header-background">
+          <img class="main-img" src="img/back-mobile.jpg" alt="Главное фото города Седона" width="901" height="389">
+        </div>
+    </header>
+<main class="form-container">
+  <section class="form-sedona">
+      <header class="form-name">
+        <h1 class="form-name__header">Оставьте свой отзыв</h1>
+        <p class="form-name__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </header>
+  <form action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="form-body">
+        <legend class="form-body__header">Представьтесь:</legend>
+          <label class="nickname">Имя*:
+            <input type="text" name="username" value="Пётр" required>
+          </label>
+          <label class="nickname">Фамилия*:
+            <input type="text" name="username" value="Пустота" required>
+          </label>
+          <label class="nickname">Отчество:
+            <input type="text" name="username" value="Викторович">
+          </label>
+      </fieldset>
+      <fieldset class="form-contacts">
+        <legend class="form-contacts__header">Контактная информация:</legend>
+          <label class="nickname">Контактный телефон*:
+            <input type="tel" name="client_tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+          </label>
+          <label class="nickname">Электронная почта*:
+            <input type="email" name="client_email" placeholder="Введите e-mail" required>
+          </label>
+      </fieldset>
+      <fieldset class="opinion">
+      <legend class="opinion__header">Ваше Общее впечатление:</legend>
+        <label class="opinion"><input type="radio" name="opinion" value="positively" checked>Скорее положительное
+        </label>
+        <label class="opinion"><input type="radio" name="opinion" value="negatively">Скорее отрицательное
+        </label>
+        <label class="opinion"><input type="radio" name="opinion" value="difficult">Затрудняюсь ответить
+        </label>
+      </fieldset>
+      <fieldset class="places">
+      <legend class="places__header">посещенные достопримечательности:</legend>
+        <label class="places"><input type="checkbox" name="places1" checked>Мост Дьявола
+        </label>
+        <label class="places"><input type="checkbox" name="places2" checked>Гора-Колокол
+        </label>
+        <label class="places"><input type="checkbox" name="places3" checked>Слайд-парк
+        </label>
+        <label class="places"><input type="checkbox" name="places4">Красные скалы
+        </label>
+      </fieldset>
+      <fieldset class="places">
+      <legend class="places__emotions">Опишите свои эмоции:</legend>
+        <label class="visually-hidden" for="impression">Опишите свои эмоции:</label>
+        <textarea class="emotions" name="emotions" id="impression" rows="5">Опишите подробно все свои восторги</textarea>
+      </fieldset>
+        <button class="button-form" type="submit">Отправить отзыв</button>
+        <span class="form-subj">* — обязательные поля</span>
+  </form>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer-hashtag">
+    <a class="footer-hashtag-link" href="#" alt="ссылка на поиск по хештегу">#visitsedona</a>
+  </div>
+    <ul class="footer-social">
+      <li>
+        <span class="visually-hidden">ссылка на страницу вконтакте</span>
+        <a class="footer-social-vk" href="https://vk.com/htmlacademy" alt="ссылка на страницу вконтакте"></a>
+      </li>
+      <li>
+        <span class="visually-hidden">ссылка на страницу телеграм</span>
+        <a class="footer-social-telegram" href="https://t.me/htmlacademy" alt="ссылка на страницу в телеграмме"></a>
+      </li>
+      <li>
+        <span class="visually-hidden">ссылка на страницу ютуб</span>
+        <a class="footer-social-youtube" href="https://youtube.com/user/htmlacademy"  alt="ссылка на страницу в ютуб"></a>
+      </li>
+    </ul>
+  <div class="copyright">
+    <b class="copyright__text">Разработано</b>
+    <a class="copyright__link" href="https://htmlacademy.ru/">
+      <img class="copyright-img" src="htmlacademy.svg" width="27" height="34" alt="htmlacademy logo">
+    </a>
+  </div>
+</footer>
+</body>
+</html>
