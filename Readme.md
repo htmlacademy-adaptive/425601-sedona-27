@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Maria Semkovich](https://up.htmlacademy.ru/adaptive/27/user/425601).
-* Наставник: `Александр Зиновьев`.
+* Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
 
 ---
 

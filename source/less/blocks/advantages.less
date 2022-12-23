@@ -1,0 +1,89 @@
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.advantages__item {
+  @media (min-width: @tablet-width) {
+    .advantages__image {
+      display: block;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      background-image: url("../img/photo-bridge.png");
+    }
+
+    &-img {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+
+    &-offer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-start: 1;
+      grid-column-end: -1;
+
+      .advantages__img {
+        grid-column-start: 2;
+        grid-column-end: -1;
+      }
+    }
+  }
+}
+
+.advantures__block {
+  padding: 33px 20px 40px;
+  background-color: #eeeeee;
+  text-align: center;
+  text-transform: uppercase;
+
+  &-img {
+    color: #ffffff;
+    background-color: #81b3d2;
+  }
+
+  &-border {
+    border-bottom: 1px solid #d6d6d6;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 50px 50px;
+  }
+}
+
+.advantages__number {
+  display: block;
+  margin-bottom: 17px;
+}
+
+.advantages__description {
+  margin: 0;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 11px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.advantages__offer {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
