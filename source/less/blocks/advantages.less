@@ -1,3 +1,19 @@
+.advantages__image {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+.advantages__img {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: -1;
+  }
+}
+
 .advantages__list {
   margin: 0;
   padding: 0;
@@ -11,13 +27,6 @@
 
 .advantages__item {
   @media (min-width: @tablet-width) {
-    .advantages__image {
-      display: block;
-      grid-column-start: 1;
-      grid-column-end: 3;
-      background-image: url("../img/photo-bridge.png");
-    }
-
     &-img {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -25,21 +34,15 @@
       grid-column-end: -1;
     }
 
-    &-offer {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+    .advantages__image {
+      display: block;
       grid-column-start: 1;
-      grid-column-end: -1;
-
-      .advantages__img {
-        grid-column-start: 2;
-        grid-column-end: -1;
-      }
+      grid-column-end: 3;
     }
   }
 }
 
-.advantures__block {
+.advantages__block {
   padding: 33px 20px 40px;
   background-color: #eeeeee;
   text-align: center;
@@ -55,7 +58,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 50px 50px 50px;
+    padding: 52px 50px 51px;
   }
 }
 
@@ -69,12 +72,12 @@
 }
 
 .advantages__title {
-  margin: 0;
-  margin-bottom: 11px;
-  color: #000000;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 11px;
+  color: #000000;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;

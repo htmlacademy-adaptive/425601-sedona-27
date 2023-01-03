@@ -18,12 +18,6 @@ body {
   overflow: hidden;
 }
 
-.wrapper-mobile {
-  padding-left: 18px;
-  padding-right: 18px;
-  text-align: center;
-}
-
 .wrapper {
   width: @mobile-width;
   margin: 0 auto;
@@ -35,4 +29,15 @@ body {
   @media (min-width: @desktop-width) {
     width: @desktop-width;
   }
+}
+
+.wrapper-mobile {
+  padding-left: 18px;
+  padding-right: 18px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
 }
