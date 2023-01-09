@@ -56,7 +56,7 @@
     </nav>
   </header>
   <div class="screenphoto">
-        <img src="img/SEDONA.svg" width="229" height="39" alt="Sedona">
+    <img src="img/text-index.svg" alt="Sedona">
   </div>
   <section class="review">
       <header class="form__name">
@@ -65,29 +65,29 @@
           <span class="newline">а также о посещенных вами достопримечательностях</span></p>
       </header>
   <form class="review__form" action="https://echo.htmlacademy.ru/" method="post">
-    <fieldset class="review__group">
+    <fieldset class="review__group review__group--border">
       <legend class="review__title">Представьтесь:</legend>
       <label class="review__name">
-        Имя<sup>*</sup>:
+        <span class="newline review__name--padding">Имя<sup>*</sup>:</span>
         <input class="review__text--field" type="text" name="name" placeholder="Введите ваше имя" value="Пётр" required>
       </label>
       <label class="review__name">
-        Фамилия<sup>*</sup>:
+        <span class="newline review__name--padding">Фамилия<sup>*</sup>:</span>
         <input class="review__text--field" type="text" name="surname" placeholder="Введите вашу фамилию" value="Пустота" required>
       </label>
       <label class="review__name">
-        Отчество:
+        <span class="newline review__name--padding">Отчество:</span>
         <input class="review__text--field" type="text" name="patronymic" placeholder="Введите ваше отчество" value="Викторович">
       </label>
     </fieldset>
-    <fieldset class="review__group">
+    <fieldset class="review__group review__group--second">
       <legend class="review__title">Контактная информация:</legend>
       <label class="review__name">
-        Контактный телефон<sup>*</sup>:
+        <span class="newline review__name--padding">Контактный телефон<sup>*</sup>:</span>
         <input class="review__text--field" type="tel" name="contact-phone" placeholder="Введите телефон" required>
       </label>
       <label class="review__name">
-        Электронная почта<sup>*</sup>:
+        <span class="newline review__name--padding">Электронная почта<sup>*</sup>:</span>
         <input class="review__text--field" type="email" name="contact-email" placeholder="Введите e-mail" required>
       </label>
     </fieldset>
