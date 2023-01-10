@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Седона, Sedona, htmlacademy, проект для учебы">
+    <meta name="description" content="Обучение HTML и CSS. Адаптивная вёрстка и автоматизация">
+    <meta name="author" content="Semkovich Maria">
+    <title>Sedona</title>
+    <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/425601-sedona-27/5/">
+</head>
+<body class="page-body">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo">
+        <img src="img/logo.svg" width="185" height="96" alt="Logo of Sedona">
+      </a>
+          <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+          </button>
+    </div>
+    <nav class="main-nav main-nav--none">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link-active" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru">Html academy</a>
+          </li>
+        </ul>
+    </nav>
+  </header>
+<main class="catalog-container">
+  <header class="screenphoto">
+    <img src="img/text-index.svg" alt="Sedona">
+  </header>
+  <section class="description">
+        <h2 class="description__title">Фото и видео</h2>
+        <p class="description__text">
+          Не можете решиться на путешествие из-за курса?
+          <span class="newline">Фотографии помогут вам забыть о политике и экономике.</span>
+        </p>
+  </section>
+  <section class="catalog">
+    <ul class="catalog__list">
+    <li class="catalog__item">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+        <img class="catalog__photos" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Живописная дорога уходит в закат">
+      </picture>
+    <div class="catalog__photos-details">
+        <p class="catalog__author">
+          <h3 class="catalog__title">неродные просторы</h3>
+          <span class="catalog__author--name">Автор фото: Борис</span>
+        </p>
+        <p class="catalog__reaction">
+          <span class="visually-hidden">количество лайков под фотографией</span>
+            <span class="catalog__reaction-number">1350</span>
+        </p>
+    </div>
+    </li>
+    <li class="catalog__item">
+      <img class="catalog__photos" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Кактус на фоне гор">
+      <div class="catalog__photos-details">
+          <p class="catalog__author">
+            <h3 class="catalog__title">Местная растительность</h3>
+            <span class="catalog__author--name">Автор фото: Сергей</span>
+          </p>
+          <p class="catalog__reaction">
+            <span class="visually-hidden">количество лайков под фотографией</span>
+              <span class="catalog__reaction-number">143</span>
+          </p>
+      </div>
+      </li>
+      <li class="catalog__item">
+        <img class="catalog__photos" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога-серпантин поднимается в горы">
+        <div class="catalog__photos-details">
+            <p class="catalog__author">
+              <h3 class="catalog__title">Дорога на север</h3>
+              <span class="catalog__author--name">Автор фото: Петр</span>
+            </p>
+            <p class="catalog__reaction">
+              <span class="visually-hidden">количество лайков под фотографией</span>
+                <span class="catalog__reaction-number">96</span>
+            </p>
+        </div>
+        </li>
+        <li class="catalog__item">
+          <img class="catalog__photos" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола из многовековых скал">
+          <div class="catalog__photos-details">
+              <p class="catalog__author">
+                <h3 class="catalog__title">Мост дьявола</h3>
+                <span class="catalog__author--name">Автор фото: Антон</span>
+              </p>
+              <p class="catalog__reaction">
+                <span class="visually-hidden">количество лайков под фотографией</span>
+                  <span class="catalog__reaction-number">254</span>
+              </p>
+          </div>
+          </li>
+    </ul>
+  </section>
+  <section class="description">
+      <h3 class="description__title">
+        Все еще сомневаетесь?
+      </h3>
+      <p class="description__text">
+        Смотрите видеопрезентацию и скорее за билетами, пока они
+        <span class="newline">не подорожали в очередной раз!</span>
+      </p>
+      <p class="nodoubt-video">
+        <video width="280" height="177" controls="controls" poster="img/video-mobile.jpg"></video>
+      </p>
+  </section>
+</main>
+<footer class="footer">
+    <div class="footer-hashtag">
+      <a class="footer-hashtag-link" href="#" alt="ссылка на поиск по хештегу">#visitsedona</a>
+    </div>
+      <ul class="footer-social">
+        <li>
+          <span class="visually-hidden">ссылка на страницу вконтакте</span>
+          <a class="footer-social-vk" href="https://vk.com/htmlacademy" alt="ссылка на страницу вконтакте"></a>
+        </li>
+        <li>
+          <span class="visually-hidden">ссылка на страницу телеграм</span>
+          <a class="footer-social-telegram" href="https://t.me/htmlacademy" alt="ссылка на страницу в телеграмме"></a>
+        </li>
+        <li>
+          <span class="visually-hidden">ссылка на страницу ютуб</span>
+          <a class="footer-social-youtube" href="https://youtube.com/user/htmlacademy"  alt="ссылка на страницу в ютуб"></a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/">
+          <b class="copyright__text">Разработано</b>
+          <img class="copyright-img" src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy logo">
+        </a>
+      </div>
+</footer>
+</body>
+</html>
