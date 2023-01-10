@@ -1,7 +1,24 @@
+.advantages__image {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+.advantages__img {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: -1;
+  }
+}
+
 .advantages__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-color: #eeeeee;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -10,52 +27,45 @@
 }
 
 .advantages__item {
+  .advantages__block:first-child {
+    padding-top: 49px;
+  }
+
   @media (min-width: @tablet-width) {
-    .advantages__image {
-      display: block;
-      grid-column-start: 1;
-      grid-column-end: 3;
-      background-image: url("../img/photo-bridge.png");
-    }
-
-    &-img {
+    &--img {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-start: 1;
-      grid-column-end: -1;
-    }
-
-    &-offer {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2fr, 1fr);
       grid-column-start: 1;
       grid-column-end: -1;
 
-      .advantages__img {
-        grid-column-start: 2;
-        grid-column-end: -1;
+      &:first-child {
+        grid-template-columns: 1fr 2fr;
       }
     }
   }
 }
 
-.advantures__block {
+.advantages__block {
   padding: 33px 20px 40px;
   background-color: #eeeeee;
   text-align: center;
   text-transform: uppercase;
 
-  &-img {
+  &--img {
     color: #ffffff;
     background-color: #81b3d2;
   }
 
-  &-border {
+  &--border {
     border-bottom: 1px solid #d6d6d6;
   }
 
   @media (min-width: @tablet-width) {
-    padding: 50px 50px 50px;
+    padding: 52px 50px 51px;
+
+    &--border {
+      border: none;
+    }
   }
 }
 
@@ -69,12 +79,12 @@
 }
 
 .advantages__title {
-  margin: 0;
-  margin-bottom: 11px;
-  color: #000000;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 11px;
+  color: #000000;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
@@ -85,5 +95,21 @@
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-column-end: -1;
+  }
+}
+
+.advantages_photo1 {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: -1;
+  }
+}
+
+.advantages_photo2 {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
