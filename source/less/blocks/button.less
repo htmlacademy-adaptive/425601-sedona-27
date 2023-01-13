@@ -1,19 +1,23 @@
 .button {
   font-family: inherit;
   color: #ffffff;
-  background-color: #81b3d2;
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  background-color: #81b3d2;
   border: none;
+  text-transform: uppercase;
 
-  :active {
-    color: rgba(255, 255, 255, 0.3);
-    background: rgb(84, 150, 189);
+  &:hover {
+    background-color: #669ec0;
   }
 
-  :hover {
-    background: rgb(102, 158, 192);
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
   }
 }

@@ -12,17 +12,17 @@
 <body class="page-body">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo">
+        <a class="main-header__logo" href="index.html">
           <img src="img/logo.svg" width="185" height="96" alt="Logo of Sedona">
         </a>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link-active" href="index.html">Главная</a>
+              <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Фото и видео</a>
@@ -38,14 +38,16 @@
     </header>
 <main class="main-container">
       <header class="hero">
+        <div class="screenphoto screenphoto__main">
         <img class="hero__image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в великолепный город Седона">
+        </div>
       </header>
   <section class="description">
-        <h1 class="description__header">Седона - небольшой городок в Аризоне, <br>заслуживающий большего!</h1>
+        <h1 class="description__header">Седона - небольшой городок в Аризоне, <span class="newline2">заслуживающий большего!</span></h1>
         <p class="description__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
   </section>
   <section class="advantages">
-      <h2 class="visually-hidden">Туристический город Седона</h2>
+      <h2 class="visually-hidden">Туристический город Седона прекрасно дополнит впечатления от Гранд Каньона</h2>
       <ol class="advantages__list">
         <li class="advantages__item advantages__image">
           <div class="advantages__block advantages__block--img">
@@ -87,21 +89,21 @@
   </li>
     <li class="advantages__item">
       <div class="advantages__block advantages__block--border">
-      <h3 class="advantages__title">Небольшая площадь</h3>
+      <h3 class="advantages__title2">Небольшая площадь</h3>
       <p class="advantages__number">- №3 -</p>
       <p class="advantages__description">Все интересные места находятся очень близко</p>
       </div>
     </li>
     <li class="advantages__item">
       <div class="advantages__block advantages__block--border">
-      <h3 class="advantages__title">Красивая дорога</h3>
+      <h3 class="advantages__title2">Красивая дорога</h3>
       <p class="advantages__number">- №4 -</p>
       <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
     </div>
     </li>
     <li class="advantages__item">
       <div class="advantages__block">
-      <h3 class="advantages__title">Мало туристов</h3>
+      <h3 class="advantages__title2">Мало туристов</h3>
       <p class="advantages__number">- №5 -</p>
       <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
       </div>
@@ -121,27 +123,27 @@
   </section>
 </main>
 <footer class="footer">
-  <div class="footer-hashtag">
-    <a class="footer-hashtag-link" href="#" alt="ссылка на поиск по хештегу">#visitsedona</a>
+  <div class="footer__hashtag">
+    <a class="footer__hashtag-link"alt="хештег посетите Седону">#visitsedona</a>
   </div>
-    <ul class="footer-social">
-      <li>
+    <ul class="footer__social footer__soclist">
+      <li class="footer__socitem">
         <span class="visually-hidden">ссылка на страницу вконтакте</span>
-        <a class="footer-social-vk" href="https://vk.com/htmlacademy" alt="ссылка на страницу вконтакте"></a>
+        <a class="footer__soclink footer__social--vk" href="https://vk.com/htmlacademy" alt="ссылка на страницу вконтакте"></a>
       </li>
-      <li>
+      <li class="footer__socitem">
         <span class="visually-hidden">ссылка на страницу телеграм</span>
-        <a class="footer-social-telegram" href="https://t.me/htmlacademy" alt="ссылка на страницу в телеграмме"></a>
+        <a class="footer__soclink footer__social--telegram" href="https://t.me/htmlacademy" alt="ссылка на страницу в телеграмме"></a>
       </li>
-      <li>
+      <li class="footer__socitem">
         <span class="visually-hidden">ссылка на страницу ютуб</span>
-        <a class="footer-social-youtube" href="https://youtube.com/user/htmlacademy"  alt="ссылка на страницу в ютуб"></a>
+        <a class="footer__soclink footer__social--youtube" href="https://youtube.com/user/htmlacademy"  alt="ссылка на страницу в ютуб"></a>
       </li>
     </ul>
   <div class="copyright">
     <a class="copyright__link" href="https://htmlacademy.ru/">
       <b class="copyright__text">Разработано</b>
-      <img class="copyright-img" src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy logo">
+      <img class="copyright__img" src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy logo">
     </a>
   </div>
 </footer>

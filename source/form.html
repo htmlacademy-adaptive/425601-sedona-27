@@ -31,7 +31,7 @@
 <main class="form-container">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <img src="img/logo.svg" width="185" height="96" alt="Logo of Sedona">
       </a>
           <button class="main-nav__toggle" type="button">
@@ -55,8 +55,10 @@
         </ul>
     </nav>
   </header>
-  <div class="screenphoto">
-    <img src="img/text-index.svg" alt="Sedona">
+  <div  class="screenphoto1">
+    <div class="screenphoto">
+      <img src="img/sedona.svg" alt="Sedona">
+    </div>
   </div>
   <section class="review">
       <header class="form__name">
@@ -82,13 +84,13 @@
     </fieldset>
     <fieldset class="review__group review__group--second">
       <legend class="review__title">Контактная информация:</legend>
-      <label class="review__name">
+      <label class="review__name" for="contact-phone">
         <span class="newline review__name--padding">Контактный телефон<sup>*</sup>:</span>
-        <input class="review__text--field" type="tel" name="contact-phone" placeholder="Введите телефон" required>
+        <input class="review__text--field review__icon review__icon--phone" type="tel" name="contact-phone" placeholder="Введите телефон" required>
       </label>
-      <label class="review__name">
+      <label class="review__name"  for="contact-email">
         <span class="newline review__name--padding">Электронная почта<sup>*</sup>:</span>
-        <input class="review__text--field" type="email" name="contact-email" placeholder="Введите e-mail" required>
+        <input class="review__text--field  review__icon review__icon--mail" type="email" name="contact-email" placeholder="Введите e-mail" required>
       </label>
     </fieldset>
     <fieldset class="review__group review__group--impression">
@@ -113,7 +115,8 @@
     </fieldset>
     <fieldset class="review__group review__group--attraction">
       <legend class="review__title review__title1">
-        <span class="review__title--marg">Посещенные достопримечательности:</span>
+        <span class="review__title--marg">Посещенные
+          <span class="newline">достопримечательности:</span>
       </legend>
       <label class="review__name-label review__name-label--capitalize">
         <input class="review__input-name visually-hidden" type="checkbox" name="bridge" checked>
@@ -139,7 +142,7 @@
     <fieldset class="review__group review__group--describe">
       <legend class="review__title">Опишите свои эмоции:</legend>
       <label class="visually-hidden" for="describe">Поле ввода комментария:</label>
-      <textarea class="review__describe" name="review-describe" id="describe" placeholder="Опишите подробно все свои восторги"></textarea>
+      <textarea class="review__describe" name="review-describe" id="describe" placeholder="Опишите подробно все свои восторги" cols="30" rows="5"></textarea>
     </fieldset>
     <button class="review__button button" type="submit">Отправить отзыв</button>
     <span class="review__note"><sup>*</sup> — обязательные поля</span>
@@ -147,29 +150,30 @@
 </section>
 </main>
 <footer class="footer">
-  <div class="footer-hashtag">
-    <a class="footer-hashtag-link" href="#" alt="ссылка на поиск по хештегу">#visitsedona</a>
+  <div class="footer__hashtag">
+    <a class="footer__hashtag-link"alt="хештег посетите Седону">#visitsedona</a>
   </div>
-    <ul class="footer__social">
-      <li>
+    <ul class="footer__social footer__soclist">
+      <li class="footer__socitem">
         <span class="visually-hidden">ссылка на страницу вконтакте</span>
-        <a class="footer__social--vk" href="https://vk.com/htmlacademy" alt="ссылка на страницу вконтакте"></a>
+        <a class="footer__soclink footer__social--vk" href="https://vk.com/htmlacademy" alt="ссылка на страницу вконтакте"></a>
       </li>
-      <li>
+      <li class="footer__socitem">
         <span class="visually-hidden">ссылка на страницу телеграм</span>
-        <a class="footer__social--telegram" href="https://t.me/htmlacademy" alt="ссылка на страницу в телеграмме"></a>
+        <a class="footer__soclink footer__social--telegram" href="https://t.me/htmlacademy" alt="ссылка на страницу в телеграмме"></a>
       </li>
-      <li>
+      <li class="footer__socitem">
         <span class="visually-hidden">ссылка на страницу ютуб</span>
-        <a class="footer__social--youtube" href="https://youtube.com/user/htmlacademy"  alt="ссылка на страницу в ютуб"></a>
+        <a class="footer__soclink footer__social--youtube" href="https://youtube.com/user/htmlacademy"  alt="ссылка на страницу в ютуб"></a>
       </li>
     </ul>
-    <div class="copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/">
-        <b class="copyright__text">Разработано</b>
-        <img class="copyright-img" src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy logo">
-      </a>
-    </div>
+  <div class="copyright">
+    <a class="copyright__link" href="https://htmlacademy.ru/">
+      <b class="copyright__text">Разработано</b>
+      <img class="copyright__img" src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy logo">
+    </a>
+  </div>
 </footer>
+<script src="./js/script.js"></script>
 </body>
 </html>

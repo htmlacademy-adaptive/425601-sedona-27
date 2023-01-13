@@ -1,33 +1,24 @@
 .screenphoto {
+  position: relative;
   color: #ffffff;
-  background-color: #000000;
-  background-image: url("../img/back.jpg");
+  //background-image: url("../img/back.jpg");
   background-position: bottom center;
   background-size: cover; //100% auto;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 90px 20px 85px;
+  padding: 116px 20px 85px;
+    background-image: url("../img/intro-triangle.svg");
+    background-size: 100% 57px;
+    height: 57px;
+    bottom: 0;
+    z-index: 1;
 }
 
-// .screenphoto::after {
-//   content: "";
-//   display: block;
-//   width: 100%;
-//   position: absolute;
-//   bottom: -1px;
-//   left: 0;
-//   height: 27px;
-//   background-image: url("../img/intro-triangle.svg");
-//   background-position: bottom;
-//   background-repeat: no-repeat;
-//   background-size: 322px 27px;
-//   background-position-x: -1px;
+.screenphoto1 {
+  background-image: url("../img/back.jpg");
+  background-position: bottom;
+}
 
-//   @media (min-width: @tablet-width) {
-//     background-image: url("../img/intro-triangle.svg");
-//     background-size: 100% 57px;
-//     height: 57px;
-//     bottom: 0;
-//     z-index: 1;
-//   }
-// }
+.screenphoto__main {
+    padding-bottom: 200px;
+}
