@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="keywords" content="Седона, Sedona, htmlacademy, проектр для учебы, form">
+    <meta name="keywords" content="Седона, Sedona, htmlacademy, проект для учебы">
     <meta name="description" content="Обучение HTML и CSS. Адаптивная вёрстка и автоматизация">
     <meta name="author" content="Semkovich Maria">
-    <title>Sedona</title>
+    <title>Фото и видео</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/svg/favicon32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
@@ -38,16 +42,19 @@
               <span class="visually-hidden">Открыть меню</span>
           </button>
     </div>
-    <nav class="main-nav main-nav--none">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link-active" href="form.html">Форма отзыва</a>
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="https://htmlacademy.ru">Html academy</a>
@@ -55,10 +62,8 @@
         </ul>
     </nav>
   </header>
-  <div  class="screenphoto1">
-    <div class="screenphoto">
-      <img src="img/sedona.svg" alt="Sedona">
-    </div>
+  <div class="hero hero--nomain">
+    <img class="hero__image hero__image--nomain" src="img/sedona.svg" alt="Sedona." width="229" height="39">
   </div>
   <section class="review">
       <header class="form__name">
@@ -71,27 +76,27 @@
       <legend class="review__title">Представьтесь:</legend>
       <label class="review__name">
         <span class="newline review__name--padding">Имя<sup>*</sup>:</span>
-        <input class="review__text--field" type="text" name="name" placeholder="Введите ваше имя" value="Пётр" required>
       </label>
+      <input class="review__text--field" type="text" name="name" placeholder="Введите ваше имя" value="Пётр" required>
       <label class="review__name">
         <span class="newline review__name--padding">Фамилия<sup>*</sup>:</span>
-        <input class="review__text--field" type="text" name="surname" placeholder="Введите вашу фамилию" value="Пустота" required>
       </label>
+      <input class="review__text--field" type="text" name="surname" placeholder="Введите вашу фамилию" value="Пустота" required>
       <label class="review__name">
         <span class="newline review__name--padding">Отчество:</span>
-        <input class="review__text--field" type="text" name="patronymic" placeholder="Введите ваше отчество" value="Викторович">
       </label>
+      <input class="review__text--field" type="text" name="patronymic" placeholder="Введите ваше отчество" value="Викторович">
     </fieldset>
     <fieldset class="review__group review__group--second">
       <legend class="review__title">Контактная информация:</legend>
-      <label class="review__name" for="contact-phone">
-        <span class="newline review__name--padding">Контактный телефон<sup>*</sup>:</span>
-        <input class="review__text--field review__icon review__icon--phone" type="tel" name="contact-phone" placeholder="Введите телефон" required>
+      <label class="review__name" for="contact-phone">Контактный телефон<sup>*</sup>:
+        <span class="review__icon review__icon--phone" aria-label="Иконка телефона"></span>
       </label>
-      <label class="review__name"  for="contact-email">
-        <span class="newline review__name--padding">Электронная почта<sup>*</sup>:</span>
-        <input class="review__text--field  review__icon review__icon--mail" type="email" name="contact-email" placeholder="Введите e-mail" required>
+      <input class="review__text--field" type="tel" name="contact-phone" id="contact-phone" placeholder="Введите телефон" required>
+      <label class="review__name" for="contact-email">Электронная почта<sup>*</sup>:
+        <span class="review__icon review__icon--mail" aria-label="Иконка телефона"></span>
       </label>
+      <input class="review__text--field" type="email" name="contact-email" id="contact-email" placeholder="Введите e-mail" required>
     </fieldset>
     <fieldset class="review__group review__group--impression">
       <legend class="review__title review__title1">
@@ -140,7 +145,9 @@
       </label>
     </fieldset>
     <fieldset class="review__group review__group--describe">
-      <legend class="review__title">Опишите свои эмоции:</legend>
+      <legend class="review__title review__title1">
+        <span class="review__title--marg">Опишите свои эмоции:</span>
+      </legend>
       <label class="visually-hidden" for="describe">Поле ввода комментария:</label>
       <textarea class="review__describe" name="review-describe" id="describe" placeholder="Опишите подробно все свои восторги" cols="30" rows="5"></textarea>
     </fieldset>
@@ -151,7 +158,7 @@
 </main>
 <footer class="footer">
   <div class="footer__hashtag">
-    <a class="footer__hashtag-link"alt="хештег посетите Седону">#visitsedona</a>
+    <a class="footer__hashtag--link"alt="хештег посетите Седону" href="index.html">#visitsedona</a>
   </div>
     <ul class="footer__social footer__soclist">
       <li class="footer__socitem">

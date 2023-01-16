@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="keywords" content="Седона, Sedona, htmlacademy, проект для учебы">
     <meta name="description" content="Обучение HTML и CSS. Адаптивная вёрстка и автоматизация">
     <meta name="author" content="Semkovich Maria">
-    <title>Sedona</title>
+    <title>Фото и видео</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/svg/favicon32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
@@ -19,13 +23,16 @@
               <span class="visually-hidden">Открыть меню</span>
           </button>
     </div>
-    <nav class="main-nav main-nav--none">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link-active" href="catalog.html">Фото и видео</a>
+            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -37,10 +44,8 @@
     </nav>
   </header>
 <main class="catalog-container">
-  <div  class="screenphoto1">
-    <div class="screenphoto">
-      <img src="img/sedona.svg" alt="Sedona">
-    </div>
+  <div class="hero hero--nomain">
+    <img class="hero__image hero__image--nomain" src="img/sedona.svg" alt="Sedona." width="229" height="39">
   </div>
   <section class="description">
         <h2 class="description__title">Фото и видео</h2>
@@ -62,10 +67,15 @@
           <h3 class="catalog__title">неродные просторы</h3>
           <span class="catalog__author--name">Автор фото: Борис</span>
         </p>
-        <p class="catalog__reaction">
+        <div class="catalog__reaction">
+          <button class="catalog__reaction--button" type="button" aria-label="Поставить лайк">
+            <svg width="23" height="21" aria-hidden="true" focusable="false">
+              <use xlink:href="img/sprite.svg#like-icon"></use>
+            </svg>
+          </button>
           <span class="visually-hidden">количество лайков под фотографией</span>
-            <span class="catalog__reaction-number">1350</span>
-        </p>
+          <span class="catalog__reaction-number">1350</span>
+        </div>
     </div>
     </li>
     <li class="catalog__item">
@@ -109,7 +119,7 @@
           </li>
     </ul>
   </section>
-  <section class="description">
+  <section class="description nodoubt-video">
       <h3 class="description__title">
         Все еще сомневаетесь?
       </h3>
@@ -117,14 +127,20 @@
         Смотрите видеопрезентацию и скорее за билетами, пока они
         <span class="newline">не подорожали в очередной раз!</span>
       </p>
-      <p class="nodoubt-video">
-        <video width="280" height="177" controls="controls" poster="img/video-mobile.jpg"></video>
-      </p>
+      <picture>
+        <source media="(min-width:1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x" width="800" height="500">
+        <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x",  width="648" height="500">
+        <img class="nodoubt-video__prev" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео о городе Седона." width="280"
+        height="177">
+      </picture>
+      <button class="nodoubt-video__video">
+        <img class="nodoubt-video__button" src="img/video-button-mobile.svg" width="48" height="54" alt="Кнопка воспроизвести видео">
+      </button>
   </section>
 </main>
 <footer class="footer">
   <div class="footer__hashtag">
-    <a class="footer__hashtag-link"alt="хештег посетите Седону">#visitsedona</a>
+    <a class="footer__hashtag--link"alt="хештег посетите Седону" href="index.html">#visitsedona</a>
   </div>
     <ul class="footer__social footer__soclist">
       <li class="footer__socitem">
@@ -143,9 +159,13 @@
   <div class="copyright">
     <a class="copyright__link" href="https://htmlacademy.ru/">
       <b class="copyright__text">Разработано</b>
-      <img class="copyright__img" src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy logo">
+      <!--img class="copyright__img" src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy logo"-->
+      <svg class="footer__htmlacademy-icon" aria-hidden="true" focusable="false" width="27" height="35">
+        <use href="img/sprite.svg#htmlacademy"></use>
+      </svg>
     </a>
   </div>
 </footer>
+<script src="./js/script.js"></script>
 </body>
 </html>

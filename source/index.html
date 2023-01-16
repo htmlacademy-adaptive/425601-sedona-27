@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="keywords" content="Седона, Sedona, htmlacademy, проект для учебы">
     <meta name="description" content="Обучение HTML и CSS. Адаптивная вёрстка и автоматизация">
     <meta name="author" content="Semkovich Maria">
-    <title>Sedona</title>
+    <title>Фото и видео</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/svg/favicon32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
@@ -16,7 +20,7 @@
           <img src="img/logo.svg" width="185" height="96" alt="Logo of Sedona">
         </a>
       </div>
-      <nav class="main-nav main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -38,9 +42,11 @@
     </header>
 <main class="main-container">
       <header class="hero">
-        <div class="screenphoto screenphoto__main">
-        <img class="hero__image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в великолепный город Седона">
-        </div>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/text-index.svg" width="460" height="350"/>
+          <source media="(min-width: 768px)" srcset="img/text-index.svg" width="461" height="350"/>
+          <img class="hero__image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в великолепный город Седона"/>
+        </picture>
       </header>
   <section class="description">
         <h1 class="description__header">Седона - небольшой городок в Аризоне, <span class="newline2">заслуживающий большего!</span></h1>
@@ -114,7 +120,8 @@
   <section class="interest">
     <div class="interest__wrapper">
       <h2 class="interest-title">Заинтересовались?</h2>
-      <p class="interest-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <p class="interest-description">Укажите предполагаемые даты поездки,
+        <span class="newline">и мы покажем вам лучшие предложения гостиниц в седоне</span></p>
       <a class="button interest-button" href="#">Найти Гостиницу</a>
     </div>
   </section>
@@ -124,7 +131,7 @@
 </main>
 <footer class="footer">
   <div class="footer__hashtag">
-    <a class="footer__hashtag-link"alt="хештег посетите Седону">#visitsedona</a>
+    <a class="footer__hashtag--link"alt="хештег посетите Седону">#visitsedona</a>
   </div>
     <ul class="footer__social footer__soclist">
       <li class="footer__socitem">
@@ -142,10 +149,11 @@
     </ul>
   <div class="copyright">
     <a class="copyright__link" href="https://htmlacademy.ru/">
-      <b class="copyright__text">Разработано</b>
-      <img class="copyright__img" src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy logo">
+      Разработано
+      <img class="copyright__img" src="img/htmlacademy.svg#logo-htmlacademy" width="27" height="34" alt="htmlacademy logo">
     </a>
   </div>
 </footer>
+<script src="./js/script.js"></script>
 </body>
 </html>

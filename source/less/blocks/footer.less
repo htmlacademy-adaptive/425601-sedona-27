@@ -21,18 +21,30 @@
   }
 }
 
-.footer__hashtag-link {
+.footer__hashtag--link {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:focus {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
 
 .footer__hashtag {
   margin-bottom: 34px;
   text-align: center;
-
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     margin: 0;
