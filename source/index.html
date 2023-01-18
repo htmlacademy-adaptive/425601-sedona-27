@@ -6,7 +6,7 @@
     <meta name="keywords" content="Седона, Sedona, htmlacademy, проект для учебы">
     <meta name="description" content="Обучение HTML и CSS. Адаптивная вёрстка и автоматизация">
     <meta name="author" content="Semkovich Maria">
-    <title>Фото и видео</title>
+    <title>Главная страница</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/svg/favicon32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
+  <svg style="display: none;" id="htmlacademy" width="27" height="35" viewBox="0 0 27 35" fill="none">
+    <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="currentColor"/>
+  </svg>
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html">
@@ -42,12 +45,19 @@
     </header>
 <main class="main-container">
       <header class="hero">
+        <div class="hero__picture">
+          <source media="(min-width: 1200px)" srcset="img/text-index.svg" width="460" height="350"/>
+          <source media="(min-width: 768px)" srcset="img/text-index.svg" width="461" height="350"/>
+          <img class="hero__image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в великолепный город Седона"/>
+        </div>
+      </header>
+      <!--header class="hero">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/text-index.svg" width="460" height="350"/>
           <source media="(min-width: 768px)" srcset="img/text-index.svg" width="461" height="350"/>
           <img class="hero__image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в великолепный город Седона"/>
         </picture>
-      </header>
+      </header-->
   <section class="description">
         <h1 class="description__header">Седона - небольшой городок в Аризоне, <span class="newline2">заслуживающий большего!</span></h1>
         <p class="description__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -121,8 +131,11 @@
     <div class="interest__wrapper">
       <h2 class="interest-title">Заинтересовались?</h2>
       <p class="interest-description">Укажите предполагаемые даты поездки,
-        <span class="newline">и мы покажем вам лучшие предложения гостиниц в седоне</span></p>
-      <a class="button interest-button" href="#">Найти Гостиницу</a>
+        <span class="newline">и мы покажем вам лучшие предложения гостиниц в седоне</span>
+      </p>
+      <button class="button interest-button" type="button">
+        Найти Гостиницу
+      </button>
     </div>
   </section>
   <section class="main-map">
@@ -131,7 +144,7 @@
 </main>
 <footer class="footer">
   <div class="footer__hashtag">
-    <a class="footer__hashtag--link"alt="хештег посетите Седону">#visitsedona</a>
+    <a class="footer__hashtag--link" alt="хештег посетите Седону">#visitsedona</a>
   </div>
     <ul class="footer__social footer__soclist">
       <li class="footer__socitem">
@@ -150,7 +163,10 @@
   <div class="copyright">
     <a class="copyright__link" href="https://htmlacademy.ru/">
       Разработано
-      <img class="copyright__img" src="img/htmlacademy.svg#logo-htmlacademy" width="27" height="34" alt="htmlacademy logo">
+      <img class="copyright__img" src="img/htmlacademy.svg#htmlacademy" width="27" height="34" alt="htmlacademy logo">
+      <!--svg class="footer__htmlacademy-icon" aria-hidden="true" focusable="false" width="27" height="35" role="img" aria-label="Логотип HTML Academy">
+        <use html="htmlacademy"></use>
+      </svg-->
     </a>
   </div>
 </footer>

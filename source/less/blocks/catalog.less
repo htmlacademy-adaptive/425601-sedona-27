@@ -64,8 +64,15 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     bottom: 0;
+    text-align: left;
   }
 }
+
+// .catalog__photos-details2 {
+//   @media (min-width: @desktop-width) {
+//     padding: 18px 20px 17px 25px;
+//   }
+// }
 
 .catalog__title {
   margin: 0;
@@ -81,8 +88,7 @@
 }
 
 .catalog__author {
-  display: block;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -95,9 +101,18 @@
 
 .catalog__author--name {
   text-transform: none;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .catalog__reaction {
+  display: flex;
+  align-items: center;
+}
+
+.catalog__reaction-number {
   color: #000000;
   font-weight: 700;
   text-align: left;

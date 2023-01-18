@@ -6,7 +6,7 @@
     <meta name="keywords" content="Седона, Sedona, htmlacademy, проект для учебы">
     <meta name="description" content="Обучение HTML и CSS. Адаптивная вёрстка и автоматизация">
     <meta name="author" content="Semkovich Maria">
-    <title>Фото и видео</title>
+    <title>Форма отзыва</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/svg/favicon32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
+  <svg style="display: none;">
+    <symbol id="htmlacademy" viewBox="0 0 27 35" ><path d="M16.134 2h-.09L4 3.19v21.007L16.045 31 28 24.197V3.19L16.134 2Zm10.17 10.29-10.26-5.783v-.085h-.089l-.089-.085v.085L5.696 12.29V4.636l10.26-1.02 10.349 1.02v7.654ZM15.956 7.783l10.26 5.698-4.014 2.211-6.335-3.572v1.19l5.264 2.977-.803.426-4.46-2.552v1.19l3.39 1.957-.714.425-2.677-1.53v1.19l1.695.935-1.606.936-10.17-5.698 10.17-5.783Zm-10.26 7.059 10.171 5.783v.85l-7.048-3.997v1.19l7.137 4.083v.935L8.818 19.69v1.19l7.137 4.083 7.227-4.167v-4.423l3.034-1.7v8.504l-10.26 5.868-10.26-5.783v-8.42Z" fill="#currentColor"/></symbol>
+  </svg>
   <div class="popup popup__success">
     <div class="popup__description-bg">
       <p class="popup__title">Ваш отзыв отправлен!</p>
@@ -158,7 +161,7 @@
 </main>
 <footer class="footer">
   <div class="footer__hashtag">
-    <a class="footer__hashtag--link"alt="хештег посетите Седону" href="index.html">#visitsedona</a>
+    <a class="footer__hashtag--link" alt="хештег посетите Седону">#visitsedona</a>
   </div>
     <ul class="footer__social footer__soclist">
       <li class="footer__socitem">
@@ -176,8 +179,11 @@
     </ul>
   <div class="copyright">
     <a class="copyright__link" href="https://htmlacademy.ru/">
-      <b class="copyright__text">Разработано</b>
-      <img class="copyright__img" src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy logo">
+      Разработано
+      <img class="copyright__img" src="img/htmlacademy.svg#htmlacademy" width="27" height="34" alt="htmlacademy logo">
+      <!--svg class="footer__htmlacademy-icon" aria-hidden="true" focusable="false" width="27" height="35" role="img" aria-label="Логотип HTML Academy">
+        <use html="htmlacademy"></use>
+      </svg-->
     </a>
   </div>
 </footer>
