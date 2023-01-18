@@ -23,9 +23,6 @@
       <a class="main-header__logo" href="index.html">
         <img src="img/logo.svg" width="185" height="96" alt="Logo of Sedona">
       </a>
-          <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-          </button>
     </div>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
@@ -138,23 +135,26 @@
           </li>
     </ul>
   </section>
-  <section class="description nodoubt-video">
-      <h3 class="description__title">
-        Все еще сомневаетесь?
-      </h3>
-      <p class="description__text">
-        Смотрите видеопрезентацию и скорее за билетами, пока они
+  <section class="description__video">
+    <header class="description nodoubt-video">
+      <h2 class="visually-hidden">Видеопрезентация города Седона</h2>
+      <p class="description__title">Все еще сомневаетесь?</p>
+      <p class="description__text">Смотрите видеопрезентацию и скорее за билетами, пока они
         <span class="newline">не подорожали в очередной раз!</span>
       </p>
+    </header>
+    <div class="nodoubt-video__block">
+      <button class="nodoubt-video__button">
+        <span class="visually-hidden">Воспроизвести</span>
+      </button>
       <picture>
-        <source media="(min-width:1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x" width="800" height="500">
+        <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x" width="800" height="500">
         <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x",  width="648" height="500">
         <img class="nodoubt-video__prev" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео о городе Седона." width="280"
         height="177">
       </picture>
-      <button class="nodoubt-video__video">
-        <img class="nodoubt-video__button" src="img/video-button-mobile.svg" width="48" height="54" alt="Кнопка воспроизвести видео">
-      </button>
+    </div>
+
   </section>
 </main>
 <footer class="footer">
