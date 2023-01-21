@@ -48,9 +48,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 20px;
+  padding-bottom: 39px;
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
@@ -105,6 +105,7 @@
   justify-content: center;
   width: 100%;
   align-items: center;
+  //padding-top: 30px;
 }
 
 .review__title1 {
@@ -120,9 +121,19 @@
   }
 }
 
+.review__title--first {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
 .review__title--marg {
   margin: 0 50px 0 50px;
-  width: 80%;
+  width: 100%;
 }
 
 .review__name {
@@ -214,6 +225,7 @@
   font-size: 18px;
   line-height: 26px;
   min-height: 46px;
+  text-transform: capitalize;
 
   &:hover .review__input-button {
     background-color: #e5e5e5;

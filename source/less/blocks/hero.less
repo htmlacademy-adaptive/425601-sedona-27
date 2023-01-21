@@ -1,12 +1,12 @@
 .hero {
-  width: 100%;
+  //width: 100%;
   color: #ffffff;
-  background-color: #4073a0;
+  background-color: #81b3d2;
   background-image: url("../img/intro-triangle.svg"), url("../img/back-mobile.jpg");
   background-position: bottom, center;
   background-repeat: no-repeat;
-  background-size: cover;
-  padding: 90px 19px 85px;
+  padding: 146px 19px 85px;
+  background-size: auto, cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/intro-triangle.svg"), url("../img/back-mobile@2x.jpg");
@@ -15,7 +15,7 @@
   @media (min-width: @tablet-width) {
     padding: 77px 30px 91px;
     background-image: url("../img/intro-triangle.svg"), url("../img/back-tablet.jpg");
-    background-position: bottom center, center top;
+    background-size: auto, cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro-triangle.svg"), url("../img/back-tablet@2x.jpg");
@@ -24,8 +24,9 @@
 
   @media (min-width: @desktop-width) {
     padding: 78px 50px 90px;
+    max-width: 1100px;
     background-image: url("../img/intro-triangle.svg"), url("../img/back-desktop.jpg");
-    background-size: cover;
+    background-size: auto, cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro-triangle.svg"), url("../img/back-desktop@2x.jpg");

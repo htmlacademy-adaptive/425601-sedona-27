@@ -67,13 +67,13 @@
   </div>
   <section class="review">
       <header class="form__name">
-        <h1 class="form__name--header">Оставьте свой отзыв</h1>
+        <legend class="review__title"><h3>Оставьте свой отзыв</h3></legend>
         <p class="form__name--description">Помогите нашим отелям стать лучше! оставьте отзыв о них,
           <span class="newline">а также о посещенных вами достопримечательностях</span></p>
       </header>
   <form class="review__form" action="https://echo.htmlacademy.ru/" method="post">
     <fieldset class="review__group review__group--border">
-      <legend class="review__title">Представьтесь:</legend>
+      <legend class="review__title review__title--first"><h3 class="review__title--marg">Представьтесь:</h3></legend>
       <label class="review__name">
         <span class="newline review__name--padding">Имя<sup>*</sup>:</span>
       </label>
@@ -88,7 +88,7 @@
       <input class="review__text--field" type="text" name="patronymic" placeholder="Введите ваше отчество" value="Викторович">
     </fieldset>
     <fieldset class="review__group review__group--second">
-      <legend class="review__title">Контактная информация:</legend>
+      <legend class="review__title"><h3 class="review__title--marg">Контактная информация:</h3></legend>
       <label class="review__name" for="contact-phone">Контактный телефон<sup>*</sup>:
         <span class="review__icon review__icon--phone" aria-label="Иконка телефона"></span>
       </label>
@@ -100,7 +100,7 @@
     </fieldset>
     <fieldset class="review__group review__group--impression">
       <legend class="review__title review__title1">
-        <span class="review__title--marg">Ваше общее впечатление:</span>
+        <h3 class="review__title--marg">Ваше общее впечатление:</h3>
       </legend>
       <label class="review__name-label">
         <input class="review__input-name visually-hidden" type="radio" name="impression" value="positive" checked>
@@ -120,8 +120,8 @@
     </fieldset>
     <fieldset class="review__group review__group--attraction">
       <legend class="review__title review__title1">
-        <span class="review__title--marg">Посещенные
-          <span class="newline">достопримечательности:</span>
+        <h3 class="review__title--marg">Посещенные
+          <span class="newline">достопримечательности:</span></h3>
       </legend>
       <label class="review__name-label review__name-label--capitalize">
         <input class="review__input-name visually-hidden" type="checkbox" name="bridge" checked>
@@ -146,7 +146,7 @@
     </fieldset>
     <fieldset class="review__group review__group--describe">
       <legend class="review__title review__title1">
-        <span class="review__title--marg">Опишите свои эмоции:</span>
+        <h3 class="review__title--marg">Опишите свои эмоции:</h3>
       </legend>
       <label class="visually-hidden" for="describe">Поле ввода комментария:</label>
       <textarea class="review__describe " name="review-describe" id="describe" placeholder="Опишите подробно все свои восторги" cols="30" rows="5"></textarea>
