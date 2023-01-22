@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
-  <svg style="display: none;" id="htmlacademy" width="27" height="35" viewBox="0 0 27 35" fill="none">
-    <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="currentColor"/>
+  <svg style="display: none;">
+    <symbol id="htmlacademy" viewBox="0 0 27 35" ><path d="M16.134 2h-.09L4 3.19v21.007L16.045 31 28 24.197V3.19L16.134 2Zm10.17 10.29-10.26-5.783v-.085h-.089l-.089-.085v.085L5.696 12.29V4.636l10.26-1.02 10.349 1.02v7.654ZM15.956 7.783l10.26 5.698-4.014 2.211-6.335-3.572v1.19l5.264 2.977-.803.426-4.46-2.552v1.19l3.39 1.957-.714.425-2.677-1.53v1.19l1.695.935-1.606.936-10.17-5.698 10.17-5.783Zm-10.26 7.059 10.171 5.783v.85l-7.048-3.997v1.19l7.137 4.083v.935L8.818 19.69v1.19l7.137 4.083 7.227-4.167v-4.423l3.034-1.7v8.504l-10.26 5.868-10.26-5.783v-8.42Z" fill="#currentColor"/></symbol>
   </svg>
     <header class="main-header">
       <div class="main-header__wrapper">
@@ -47,7 +47,6 @@
       </div>
     </header>
 <main class="main-container">
-
       <!--header class="hero">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/text-index.svg" width="460" height="350"/>
@@ -163,9 +162,8 @@
   <div class="copyright">
     <a class="copyright__link" href="https://htmlacademy.ru/">
       Разработано
-      <!--img class="copyright__img" src="img/htmlacademy.svg#htmlacademy" width="27" height="34" alt="htmlacademy logo"-->
-      <svg class="footer__htmlacademy--icon" aria-hidden="true" focusable="false" width="27" height="35" role="img" aria-label="Логотип HTML Academy">
-        <use html="htmlacademy"></use>
+      <svg class="copyright__img" aria-hidden="true" focusable="false" width="27" height="35" role="img" aria-label="Логотип HTML Academy">
+        <use href="#htmlacademy"></use>
       </svg>
     </a>
   </div>
