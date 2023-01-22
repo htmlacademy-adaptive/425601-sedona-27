@@ -92,25 +92,19 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-}
 
-.footer__social--vk {
-  list-style-type: none;
-  background-image: url("../img/vk.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  &--vk::before {
+    background-image: url("../img/vk.svg");
+  }
 
-.footer__social--telegram {
-  list-style-type: none;
-  background-image: url("../img/telegram.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  &--telegram::before {
+    background-image: url("../img/telegram.svg");
+  }
 
-.footer__social--youtube {
-  list-style-type: none;
-  background-image: url("../img/youtube.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  &--youtube::before {
+    list-style-type: none;
+    background-image: url("../img/youtube.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
