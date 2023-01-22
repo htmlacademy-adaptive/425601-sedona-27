@@ -20,7 +20,9 @@
 
 .catalog__item {
   position: relative;
-  padding: 22px 20px;
+  box-sizing: border-box;
+  padding: 24px 20px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #e5e5e5;
 
   &:first-child {
@@ -41,6 +43,8 @@
 .catalog__photos {
   display: block;
   margin-bottom: 15px;
+  width: 100%;
+  height: auto;
 
   @media (min-width: @tablet-width) {
     margin: 0;
