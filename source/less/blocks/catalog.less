@@ -20,7 +20,9 @@
 
 .catalog__item {
   position: relative;
-  padding: 0 20px;
+  box-sizing: border-box;
+  padding: 24px 20px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #e5e5e5;
 
   &:first-child {
@@ -41,6 +43,8 @@
 .catalog__photos {
   display: block;
   margin-bottom: 15px;
+  width: 100%;
+  height: auto;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -55,7 +59,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 20px 15px;
+    padding: 22px 20px 16px;
   }
 
   @media (min-width: @desktop-width) {
@@ -64,8 +68,15 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     bottom: 0;
+    text-align: left;
   }
 }
+
+// .catalog__photos-details2 {
+//   @media (min-width: @desktop-width) {
+//     padding: 18px 20px 17px 25px;
+//   }
+// }
 
 .catalog__title {
   margin: 0;
@@ -81,8 +92,7 @@
 }
 
 .catalog__author {
-  display: block;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -95,25 +105,44 @@
 
 .catalog__author--name {
   text-transform: none;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .catalog__reaction {
-  position: relative;
-  display: block;
+  display: flex;
+  margin: -5px;
+  align-items: center;
+}
+
+.catalog__reaction-number {
   color: #000000;
   font-weight: 700;
   text-align: left;
-  padding-left: 37px;
+  padding-left: 10px;
 
-  &::before {
-    content: "";
-    width: 23px;
-    height: 21px;
-    position: absolute;
-    bottom: 3px;
-    left: 0;
-    background-image: url("../img/like-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+  @media (min-width: @tablet-width) {
+    padding-left: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.catalog__reaction--button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #000000;
+  opacity: 0.3;
+  padding: 0;
+  padding-bottom: 4px;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+    opacity: 1;
   }
 }

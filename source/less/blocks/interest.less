@@ -6,10 +6,15 @@
 }
 
 .interest-button {
-  cursor: pointer;
+  padding: 16px 0 16px 0;
   width: 100%;
-  padding: 16px 20px 16px 20px; //должна расширяться, бока 20 заменить -?
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+  }
 }
+
 
 .interest-title {
   margin: 0;

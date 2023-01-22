@@ -1,0 +1,31 @@
+.copyright {
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: right;
+  }
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  text-decoration: none;
+
+  &:hover {
+    color: #81b3d2;
+
+    .copyright__img {
+      fill: #81b3d2;
+    }
+  }
+
+  &:active {
+    color: #b3b3b3;
+
+    .copyright__img {
+      fill: #b3b3b3;
+    }
+  }
+}
