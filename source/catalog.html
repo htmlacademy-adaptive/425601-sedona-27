@@ -81,8 +81,12 @@
     </div>
     </li>
     <li class="catalog__item">
-      <img class="catalog__photos" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Кактус на фоне гор">
-      <div class="catalog__photos-details">
+      <picture>
+        <source media="(min-width:1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x" width="400" height="267">
+        <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x" width="324" height="267">
+        <img class="catalog__photos" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Кактусы на фоне гор." width="280" height="280">
+      </picture>
+      <div class="catalog__photos-details catalog__photos-details2">
           <div class="catalog__author">
             <h3 class="catalog__title">Местная растительность</h3>
             <span class="catalog__author--name">Автор фото: Сергей</span>
@@ -99,8 +103,12 @@
       </div>
       </li>
       <li class="catalog__item">
-        <img class="catalog__photos" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога-серпантин поднимается в горы">
-        <div class="catalog__photos-details">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x" width="400" height="267">
+          <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x" width="324" height="267">
+          <img class="catalog__photos" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога-серпантин поднимается в горы" width="280" height="280">
+        </picture>
+        <div class="catalog__photos-details catalog__photos-details2">
             <div class="catalog__author">
               <h3 class="catalog__title">Дорога на север</h3>
               <span class="catalog__author--name">Автор фото: Петр</span>
@@ -117,7 +125,12 @@
         </div>
         </li>
         <li class="catalog__item">
-          <img class="catalog__photos" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола из многовековых скал">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x" width="400" height="267">
+            <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x" width="324" height="267">
+            <img class="catalog__photos" src="img/photo-4-mobile.jpg"
+              srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола из многовековых скал" width="280" height="280">
+          </picture>
           <div class="catalog__photos-details">
               <div class="catalog__author">
                 <h3 class="catalog__title">Мост дьявола</h3>
@@ -162,20 +175,20 @@
   <div class="footer__hashtag">
     <a class="footer__hashtag--link" alt="хештег посетите Седону">#visitsedona</a>
   </div>
-    <ul class="footer__social footer__soclist">
-      <li class="footer__socitem">
-        <span class="visually-hidden">ссылка на страницу вконтакте</span>
-        <a class="footer__soclink footer__social--vk" href="https://vk.com/htmlacademy" alt="ссылка на страницу вконтакте"></a>
-      </li>
-      <li class="footer__socitem">
-        <span class="visually-hidden">ссылка на страницу телеграм</span>
-        <a class="footer__soclink footer__social--telegram" href="https://t.me/htmlacademy" alt="ссылка на страницу в телеграмме"></a>
-      </li>
-      <li class="footer__socitem">
-        <span class="visually-hidden">ссылка на страницу ютуб</span>
-        <a class="footer__soclink footer__social--youtube" href="https://youtube.com/user/htmlacademy"  alt="ссылка на страницу в ютуб"></a>
-      </li>
-    </ul>
+  <ul class="footer__social footer__soclist">
+    <li class="footer__socitem">
+      <span class="visually-hidden">ссылка на страницу вконтакте</span>
+      <a class="footer__soclink footer__soclink--vk" href="https://vk.com/htmlacademy" alt="ссылка на страницу вконтакте"></a>
+    </li>
+    <li class="footer__socitem">
+      <span class="visually-hidden">ссылка на страницу телеграм</span>
+      <a class="footer__soclink footer__soclink--telegram" href="https://t.me/htmlacademy" alt="ссылка на страницу в телеграмме"></a>
+    </li>
+    <li class="footer__socitem">
+      <span class="visually-hidden">ссылка на страницу ютуб</span>
+      <a class="footer__soclink footer__soclink--youtube" href="https://youtube.com/user/htmlacademy"  alt="ссылка на страницу в ютуб"></a>
+    </li>
+  </ul>
   <div class="copyright">
     <a class="copyright__link" href="https://htmlacademy.ru/">
       Разработано
