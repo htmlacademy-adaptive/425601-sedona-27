@@ -66,114 +66,115 @@
     <img class="hero__image hero__image--nomain" src="img/sedona.svg" alt="Sedona." width="229" height="39">
   </div>
   <section class="review">
-      <header class="form__name">
-        <legend class="review__title"><h3>Оставьте свой отзыв</h3></legend>
-        <p class="form__name--description">Помогите нашим отелям стать лучше! оставьте отзыв о них,
-          <span class="newline">а также о посещенных вами достопримечательностях</span></p>
-      </header>
-  <form class="review__form" action="https://echo.htmlacademy.ru/" method="post">
-    <fieldset class="review__group review__group--border">
-      <legend class="review__title review__title--first"><h3 class="review__title--marg">Представьтесь:</h3></legend>
-      <label class="review__name">
-        <span class="newline review__name--padding">Имя<sup>*</sup>:</span>
-      </label>
-      <input class="review__text--field" type="text" name="name" placeholder="Введите ваше имя" value="Пётр" required>
-      <label class="review__name">
-        <span class="newline review__name--padding">Фамилия<sup>*</sup>:</span>
-      </label>
-      <input class="review__text--field" type="text" name="surname" placeholder="Введите вашу фамилию" value="Пустота" required>
-      <label class="review__name">
-        <span class="newline review__name--padding">Отчество:</span>
-      </label>
-      <input class="review__text--field" type="text" name="patronymic" placeholder="Введите ваше отчество" value="Викторович">
-    </fieldset>
-    <fieldset class="review__group review__group--second">
-      <legend class="review__title"><h3 class="review__title--marg">Контактная информация:</h3></legend>
-      <label class="review__name" for="contact-phone">Контактный телефон<sup>*</sup>:
-        <span class="review__icon review__icon--phone" aria-label="Иконка телефона"></span>
-      </label>
-      <input class="review__text--field" type="tel" name="contact-phone" id="contact-phone" placeholder="Введите телефон" required>
-      <label class="review__name" for="contact-email">Электронная почта<sup>*</sup>:
-        <span class="review__icon review__icon--mail" aria-label="Иконка телефона"></span>
-      </label>
-      <input class="review__text--field" type="email" name="contact-email" id="contact-email" placeholder="Введите e-mail" required>
-    </fieldset>
-    <fieldset class="review__group review__group--impression">
-      <legend class="review__title review__title1">
-        <h3 class="review__title--marg">Ваше общее впечатление:</h3>
-      </legend>
-      <label class="review__name-label">
-        <input class="review__input-name visually-hidden" type="radio" name="impression" value="positive" checked>
-        <span class="review__input-button review__input-button--radio"></span>
-        Скорее положительное
-      </label>
-      <label class="review__name-label">
-        <input class="review__input-name visually-hidden" type="radio" name="impression" value="negative">
-        <span class="review__input-button review__input-button--radio"></span>
-        Скорее отрицательное
-      </label>
-      <label class="review__name-label">
-        <input class="review__input-name visually-hidden" type="radio" name="impression" value="unknown">
-        <span class="review__input-button review__input-button--radio"></span>
-        Затрудняюсь ответить
-      </label>
-    </fieldset>
-    <fieldset class="review__group review__group--attraction">
-      <legend class="review__title review__title1">
-        <h3 class="review__title--marg">Посещенные
-          <span class="newline">достопримечательности:</span></h3>
-      </legend>
-      <label class="review__name-label review__name-label--capitalize">
-        <input class="review__input-name visually-hidden" type="checkbox" name="bridge" checked>
-        <span class="review__input-button review__input-button--checkbox"></span>
-        Мост дьявола
-      </label>
-      <label class="review__name-label review__name-label--capitalize">
-        <input class="review__input-name visually-hidden" type="checkbox" name="mount" checked>
-        <span class="review__input-button review__input-button--checkbox"></span>
-        Гора-колокол
-      </label>
-      <label class="review__name-label">
-        <input class="review__input-name visually-hidden" type="checkbox" name="park" checked>
-        <span class="review__input-button review__input-button--checkbox"></span>
-        Слайд-парк
-      </label>
-      <label class="review__name-label">
-        <input class="review__input-name visually-hidden" type="checkbox" name="rocks">
-        <span class="review__input-button review__input-button--checkbox"></span>
-        Красные скалы
-      </label>
-    </fieldset>
-    <fieldset class="review__group review__group--describe">
-      <legend class="review__title review__title1">
-        <h3 class="review__title--marg">Опишите свои эмоции:</h3>
-      </legend>
-      <label class="visually-hidden" for="describe">Поле ввода комментария:</label>
-      <textarea class="review__describe " name="review-describe" id="describe" placeholder="Опишите подробно все свои восторги" cols="30" rows="5"></textarea>
-    </fieldset>
-    <button class="review__button button" type="submit">Отправить отзыв</button>
-    <span class="review__note"><sup>*</sup> — обязательные поля</span>
-  </form>
-</section>
+    <h2 class="visually-hidden">Форма отзыва</h2>
+    <header class="review__header description">
+      <p class="description__title">Оставьте свой отзыв</p>
+      <p class="description__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, <span class="review__newline">а также о посещенных вами достопримечательностях</span></p>
+    </header>
+    <form class="review__form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="review__field-group review__field-group--name">
+        <h3 class="review__title">Представьтесь:</h3>
+        <div class="review__field-wrapper">
+          <label class="review__name" for="name">
+            Имя*:
+          </label>
+          <input class="review__text-field" type="text" name="name" id="name" placeholder="Введите ваше имя" value="Пётр" required>
+          <label class="review__name" for="surname">
+            Фамилия*:
+          </label>
+          <input class="review__text-field" type="text" name="surname" id="surname" placeholder="Введите вашу фамилию" value="Пустота" required>
+          <label class="review__name" for="patronymic">
+            Отчество:
+          </label>
+          <input class="review__text-field" type="text" name="patronymic" id="patronymic" placeholder="Введите ваше отчество" value="Викторович">
+        </div>
+      </div>
+      <div class="review__field-group review__field-group--contact">
+        <h3 class="review__title">Контактная информация:</h3>
+        <div class="review__field-wrapper">
+          <label class="review__name" for="contact-phone">
+            Контактный телефон*:
+            <span class="review__input-icon review__input-icon--phone"></span>
+          </label>
+          <input class="review__text-field" type="tel" name="contact-phone" id="contact-phone" placeholder="Введите телефон" required>
+          <label class="review__name" for="contact-mail">
+            Электронная почта*:
+            <span class="review__input-icon review__input-icon--mail"></span>
+          </label>
+          <input class="review__text-field" type="email" name="contact-email" id="contact-mail" placeholder="Введите e-mail" required>
+        </div>
+      </div>
+      <div class="review__field-group review__field-group--impression">
+        <h3 class="review__title">Ваше общее впечатление:</h3>
+        <label class="review__name-label">
+          <input class="review__input-control visually-hidden" type="radio" name="impression" value="positive" checked>
+          <span class="review__input-button review__input-button--radio"></span>
+          Скорее положительное
+        </label>
+        <label class="review__name-label">
+          <input class="review__input-control visually-hidden" type="radio" name="impression" value="negative">
+          <span class="review__input-button review__input-button--radio"></span>
+          Скорее отрицательное
+        </label>
+        <label class="review__name-label">
+          <input class="review__input-control visually-hidden" type="radio" name="impression" value="unknown">
+          <span class="review__input-button review__input-button--radio"></span>
+          Затрудняюсь ответить
+        </label>
+      </div>
+      <div class="review__field-group review__field-group--attraction">
+        <h3 class="review__title">Посещенные достопримечательности:</h3>
+        <label class="review__name-label review__name-label--initial">
+          <input class="review__input-control visually-hidden" type="checkbox" name="bridge-devil" checked>
+          <span class="review__input-button review__input-button--checkbox"></span>
+          Мост Дьявола
+        </label>
+        <label class="review__name-label review__name-label--initial">
+          <input class="review__input-control visually-hidden" type="checkbox" name="mount-bell" checked>
+          <span class="review__input-button review__input-button--checkbox"></span>
+          Гора-Колокол
+        </label>
+        <label class="review__name-label review__name-label--initial">
+          <input class="review__input-control visually-hidden" type="checkbox" name="slide-park" checked>
+          <span class="review__input-button review__input-button--checkbox"></span>
+          Слайд-парк
+        </label>
+        <label class="review__name-label review__name-label--initial">
+          <input class="review__input-control visually-hidden" type="checkbox" name="red-rocks">
+          <span class="review__input-button review__input-button--checkbox"></span>
+          Красные скалы
+        </label>
+      </div>
+      <div class="review__field-group review__field-group--comment">
+        <h3 class="review__title">Опишите свои эмоции:</h3>
+        <label class="visually-hidden" for="comment">Поле ввода комментария:</label>
+        <textarea class="review__comment" name="review-comment" id="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+      </div>
+      <div class="review__wrapper">
+        <button class="review__button button" type="submit">Отправить отзыв</button>
+        <span class="review__note">* — обязательные поля</span>
+      </div>
+    </form>
+  </section>
 </main>
 <footer class="footer">
   <div class="footer__hashtag">
     <a class="footer__hashtag--link" alt="хештег посетите Седону">#visitsedona</a>
   </div>
-    <ul class="footer__social footer__soclist">
-      <li class="footer__socitem">
-        <span class="visually-hidden">ссылка на страницу вконтакте</span>
-        <a class="footer__soclink footer__social--vk" href="https://vk.com/htmlacademy" alt="ссылка на страницу вконтакте"></a>
-      </li>
-      <li class="footer__socitem">
-        <span class="visually-hidden">ссылка на страницу телеграм</span>
-        <a class="footer__soclink footer__social--telegram" href="https://t.me/htmlacademy" alt="ссылка на страницу в телеграмме"></a>
-      </li>
-      <li class="footer__socitem">
-        <span class="visually-hidden">ссылка на страницу ютуб</span>
-        <a class="footer__soclink footer__social--youtube" href="https://youtube.com/user/htmlacademy"  alt="ссылка на страницу в ютуб"></a>
-      </li>
-    </ul>
+  <ul class="footer__social footer__soclist">
+    <li class="footer__socitem">
+      <span class="visually-hidden">ссылка на страницу вконтакте</span>
+      <a class="footer__soclink footer__soclink--vk" href="https://vk.com/htmlacademy" alt="ссылка на страницу вконтакте"></a>
+    </li>
+    <li class="footer__socitem">
+      <span class="visually-hidden">ссылка на страницу телеграм</span>
+      <a class="footer__soclink footer__soclink--telegram" href="https://t.me/htmlacademy" alt="ссылка на страницу в телеграмме"></a>
+    </li>
+    <li class="footer__socitem">
+      <span class="visually-hidden">ссылка на страницу ютуб</span>
+      <a class="footer__soclink footer__soclink--youtube" href="https://youtube.com/user/htmlacademy"  alt="ссылка на страницу в ютуб"></a>
+    </li>
+  </ul>
   <div class="copyright">
     <a class="copyright__link" href="https://htmlacademy.ru/">
       Разработано
