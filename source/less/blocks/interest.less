@@ -1,8 +1,15 @@
 .interest {
-  text-align: center;
-  text-transform: uppercase;
   padding: 39px 20px 49px;
-  background-color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 67px 33px 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 67px;
+  }
 }
 
 .interest-button {
@@ -18,16 +25,27 @@
 
 .interest-title {
   margin: 0;
-  font-family: @font-family, sans-serif;
+  margin-bottom: 20px;
+  color: #000000;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  text-transform: uppercase;
-  color: #000000;
-  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
 }
 
 .interest-description {
   margin: 0;
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 45px;
+  }
 }
