@@ -12,8 +12,11 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 <body class="page-body">
+  <div class="wrapper">
   <svg style="display: none;">
     <symbol id="htmlacademy" viewBox="0 0 27 35" >
       <path d="M16.134 2h-.09L4 3.19v21.007L16.045 31 28 24.197V3.19L16.134 2Zm10.17 10.29-10.26-5.783v-.085h-.089l-.089-.085v.085L5.696 12.29V4.636l10.26-1.02 10.349 1.02v7.654ZM15.956 7.783l10.26 5.698-4.014 2.211-6.335-3.572v1.19l5.264 2.977-.803.426-4.46-2.552v1.19l3.39 1.957-.714.425-2.677-1.53v1.19l1.695.935-1.606.936-10.17-5.698 10.17-5.783Zm-10.26 7.059 10.171 5.783v.85l-7.048-3.997v1.19l7.137 4.083v.935L8.818 19.69v1.19l7.137 4.083 7.227-4.167v-4.423l3.034-1.7v8.504l-10.26 5.868-10.26-5.783v-8.42Z" fill="#currentColor"/>
@@ -45,14 +48,14 @@
           </ul>
       </nav>
       <div class="hero">
-          <img class="hero__image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в великолепный город Седона"/>
+          <img class="hero__image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в великолепный город Седона">
       </div>
     </header>
-<main class="main-container--index">
+<main>
   <section class="description">
         <h1 class="description__header">Седона - небольшой городок в Аризоне, <span class="newline2">заслуживающий большего!</span></h1>
         <p class="description__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        <img class="description__whitecopy" src="img/whitecopy.svg" alt="Декоративный разделитель страницы"/>
+        <img class="description__whitecopy" src="img/whitecopy.svg" alt="Декоративный разделитель страницы">
   </section>
   <section class="advantages">
     <h2 class="visually-hidden">Преимущества города Седона</h2>
@@ -66,9 +69,9 @@
           </p>
         </div>
         <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.webp 1x, img/photo-city-desktop@2x.webp 2x" width="800" height="256"/>
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.webp 1x, img/photo-city-tablet@2x.webp 2x" width="512" height="256"/>
-            <source type="image/webp" srcset="img/photo-city-mobile@1x.webp 1x, img/photo-city-mobile@2x.webp 2x" width="320" height="260"/>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.webp 1x, img/photo-city-desktop@2x.webp 2x" width="800" height="256">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.webp 1x, img/photo-city-tablet@2x.webp 2x" width="512" height="256">
+            <source type="image/webp" srcset="img/photo-city-mobile@1x.webp 1x, img/photo-city-mobile@2x.webp 2x" width="320" height="260">
             <source media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x" width="800" height="256">
             <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x" width="512" height="256">
             <img class="advantages__img" src="img/photo-city.jpg" width="320" height="260" alt="Американский колорит - флаги, салун, местная растительность">
@@ -104,7 +107,7 @@
           <h3 class="advantages__title">Там есть <span class="advantages__newline">мост дьявола</span></h3>
           <span class="advantages__number">— №2 —</span>
           <p class="advantages__description">
-            Да, по нему можно пройти! <span class="advantages__description--break">Если вы осмелитесь, конечно</span>
+            Да, по нему можно пройти! <span class="advantages__description-break">Если вы осмелитесь, конечно</span>
           </p>
         </div>
       </li>
@@ -149,25 +152,30 @@
     </div>
   </section>
   <section class="main-map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782686.0062772133!2d-112.03875929286008!3d34.73955569102606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669665442220!5m2!1sru!2sru" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2 class="visually-hidden">Интерактивная карта Седоны</h2>
+    <iframe class="main-map__wrapper"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13567343547!2d-111.83024368662103!3d34.85444379063718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1662573364109!5m2!1sru!2sru"
+      width="320" height="350" style="border: 0;" allowfullscreen="" title="Интерактивная карта Седоны"
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </section>
 </main>
 <footer class="footer">
   <div class="footer__hashtag">
-    <a class="footer__hashtag--link" alt="хештег посетите Седону">#visitsedona</a>
+    <a class="footer__hashtag-link">#visitsedona</a>
   </div>
     <ul class="footer__social footer__soclist">
       <li class="footer__socitem">
         <span class="visually-hidden">ссылка на страницу вконтакте</span>
-        <a class="footer__soclink footer__soclink--vk" href="https://vk.com/htmlacademy" alt="ссылка на страницу вконтакте"></a>
+        <a class="footer__soclink footer__soclink--vk" href="https://vk.com/htmlacademy"></a>
       </li>
       <li class="footer__socitem">
         <span class="visually-hidden">ссылка на страницу телеграм</span>
-        <a class="footer__soclink footer__soclink--telegram" href="https://t.me/htmlacademy" alt="ссылка на страницу в телеграмме"></a>
+        <a class="footer__soclink footer__soclink--telegram" href="https://t.me/htmlacademy"></a>
       </li>
       <li class="footer__socitem">
         <span class="visually-hidden">ссылка на страницу ютуб</span>
-        <a class="footer__soclink footer__soclink--youtube" href="https://youtube.com/user/htmlacademy"  alt="ссылка на страницу в ютуб"></a>
+        <a class="footer__soclink footer__soclink--youtube" href="https://youtube.com/user/htmlacademy"></a>
       </li>
     </ul>
   <div class="copyright">
@@ -179,6 +187,7 @@
     </a>
   </div>
 </footer>
+</div>
 <script src="./js/script.js"></script>
 </body>
 </html>

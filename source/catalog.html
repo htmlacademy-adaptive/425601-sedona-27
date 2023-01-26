@@ -12,6 +12,8 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 <body class="page-body">
   <svg style="display: none;">
@@ -30,10 +32,10 @@
       </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+            <a class="main-nav__link main-nav__link--active" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -47,11 +49,10 @@
   <div class="hero hero--nomain">
     <img class="hero__image hero__image--nomain" src="img/SEDONA.svg" alt="Sedona." width="229" height="39">
   </div>
-<main class="catalog-container">
-
-  <section class="description__catalog ">
-        <h2 class="description__title">Фото и видео</h2>
-        <p class="description__textcatalog">
+<main class="main-catalog">
+  <section class="main-catalog__catalog ">
+        <h2 class="main-catalog__title">Фото и видео</h2>
+        <p class="main-catalog__textcatalog">
           Не можете решиться на путешествие из-за курса?
           <span class="newline">Фотографии помогут вам забыть о политике и экономике.</span>
         </p>
@@ -59,11 +60,11 @@
   <section class="catalog">
     <ul class="catalog__list">
     <li class="catalog__item">
-      <a class="catalog__item--photo" href="#">
+      <a class="catalog__item-photo" href="#">
       <picture>
-        <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x" width="1200" height="400"/>
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x" width="648" height="400"/>
-        <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x" width="280" height="280"/>
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x" width="1200" height="400">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x" width="648" height="400">
+        <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x" width="280" height="280">
         <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x" width="1200" height="400">
         <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x" width="648" height="400">
         <img class="catalog__photos" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Живописная дорога уходит в закат">
@@ -72,10 +73,10 @@
     <div class="catalog__photos-details">
         <div class="catalog__author">
           <h3 class="catalog__title">неродные просторы</h3>
-          <span class="catalog__author--name">Автор фото: Борис</span>
+          <span class="catalog__author-name">Автор фото: Борис</span>
         </div>
         <div class="catalog__reaction">
-          <button class="catalog__reaction--button" type="button" aria-label="Поставить лайк">
+          <button class="catalog__reaction-button" type="button" aria-label="Поставить лайк">
             <svg class="like-icon-svg" aria-hidden="true" focusable="false" width="32" height="32">
               <use href="#like"></use>
             </svg>
@@ -86,11 +87,11 @@
     </div>
     </li>
     <li class="catalog__item">
-      <a class="catalog__item--photo" href="#">
+      <a class="catalog__item-photo" href="#">
       <picture>
-        <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x" width="400" height="267"/>
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x" width="324" height="267"/>
-        <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x" width="280" height="280"/>
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x" width="400" height="267">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x" width="324" height="267">
+        <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x" width="280" height="280">
         <source media="(min-width:1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x" width="400" height="267">
         <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x" width="324" height="267">
         <img class="catalog__photos" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Кактусы на фоне гор." width="280" height="280">
@@ -99,10 +100,10 @@
       <div class="catalog__photos-details catalog__photos-details2">
           <div class="catalog__author">
             <h3 class="catalog__title">Местная растительность</h3>
-            <span class="catalog__author--name">Автор фото: Сергей</span>
+            <span class="catalog__author-name">Автор фото: Сергей</span>
           </div>
           <div class="catalog__reaction">
-            <button class="catalog__reaction--button" type="button" aria-label="Поставить лайк">
+            <button class="catalog__reaction-button" type="button" aria-label="Поставить лайк">
               <svg class="like-icon-svg" aria-hidden="true" focusable="false" width="32" height="32">
                 <use href="#like"></use>
               </svg>
@@ -113,11 +114,11 @@
       </div>
       </li>
       <li class="catalog__item">
-        <a class="catalog__item--photo" href="#">
+        <a class="catalog__item-photo" href="#">
         <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x" width="400" height="267"/>
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x" width="324" height="267"/>
-          <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x" width="280" height="280"/>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x" width="400" height="267">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x" width="324" height="267">
+          <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x" width="280" height="280">
           <source media="(min-width:1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x" width="400" height="267">
           <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x" width="324" height="267">
           <img class="catalog__photos" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога-серпантин поднимается в горы" width="280" height="280">
@@ -126,10 +127,10 @@
         <div class="catalog__photos-details catalog__photos-details2">
             <div class="catalog__author">
               <h3 class="catalog__title">Дорога на север</h3>
-              <span class="catalog__author--name">Автор фото: Петр</span>
+              <span class="catalog__author-name">Автор фото: Петр</span>
             </div>
             <div class="catalog__reaction">
-              <button class="catalog__reaction--button" type="button" aria-label="Поставить лайк">
+              <button class="catalog__reaction-button" type="button" aria-label="Поставить лайк">
                 <svg class="like-icon-svg" aria-hidden="true" focusable="false" width="32" height="32">
                   <use href="#like"></use>
                 </svg>
@@ -140,11 +141,11 @@
         </div>
         </li>
         <li class="catalog__item">
-          <a class="catalog__item--photo" href="#">
+          <a class="catalog__item-photo" href="#">
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x" width="400" height="267"/>
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x" width="324" height="267"/>
-            <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x" width="280" height="280"/>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x" width="400" height="267">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x" width="324" height="267">
+            <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x" width="280" height="280">
             <source media="(min-width:1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x" width="400" height="267">
             <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x" width="324" height="267">
             <img class="catalog__photos" src="img/photo-4-mobile.jpg"
@@ -154,10 +155,10 @@
           <div class="catalog__photos-details">
               <div class="catalog__author">
                 <h3 class="catalog__title">Мост дьявола</h3>
-                <span class="catalog__author--name">Автор фото: Антон</span>
+                <span class="catalog__author-name">Автор фото: Антон</span>
               </div>
               <div class="catalog__reaction">
-                <button class="catalog__reaction--button" type="button" aria-label="Поставить лайк">
+                <button class="catalog__reaction-button" type="button" aria-label="Поставить лайк">
                   <svg class="like-icon-svg" aria-hidden="true" focusable="false" width="32" height="32">
                     <use href="#like"></use>
                   </svg>
@@ -169,7 +170,7 @@
           </li>
     </ul>
   </section>
-  <section class="description__video">
+  <section class="main-catalog__nodoubt">
     <header class="description nodoubt-video">
       <h2 class="visually-hidden">Видеопрезентация города Седона</h2>
       <p class="description__title">Все еще сомневаетесь?</p>
@@ -177,14 +178,14 @@
         <span class="newline">не подорожали в очередной раз!</span>
       </p>
     </header>
-    <div class="nodoubt-video__block">
-      <button class="nodoubt-video__button">
+    <div class="main-catalog__nodoubt-block">
+      <button class="main-catalog__nodoubt-button">
         <span class="visually-hidden">Воспроизвести</span>
       </button>
       <picture>
         <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x" width="800" height="500">
-        <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x",  width="648" height="500">
-        <img class="nodoubt-video__prev" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео о городе Седона." width="280"
+        <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x" width="648" height="500">
+        <img class="main-catalog__nodoubt-prev" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео о городе Седона." width="280"
         height="177">
       </picture>
     </div>
@@ -193,27 +194,27 @@
 </main>
 <footer class="footer">
   <div class="footer__hashtag">
-    <a class="footer__hashtag--link" alt="хештег посетите Седону">#visitsedona</a>
+    <a class="footer__hashtag-link">#visitsedona</a>
   </div>
   <ul class="footer__social footer__soclist">
     <li class="footer__socitem">
       <span class="visually-hidden">ссылка на страницу вконтакте</span>
-      <a class="footer__soclink footer__soclink--vk" href="https://vk.com/htmlacademy" alt="ссылка на страницу вконтакте"></a>
+      <a class="footer__soclink footer__soclink--vk" href="https://vk.com/htmlacademy"></a>
     </li>
     <li class="footer__socitem">
       <span class="visually-hidden">ссылка на страницу телеграм</span>
-      <a class="footer__soclink footer__soclink--telegram" href="https://t.me/htmlacademy" alt="ссылка на страницу в телеграмме"></a>
+      <a class="footer__soclink footer__soclink--telegram" href="https://t.me/htmlacademy"></a>
     </li>
     <li class="footer__socitem">
       <span class="visually-hidden">ссылка на страницу ютуб</span>
-      <a class="footer__soclink footer__soclink--youtube" href="https://youtube.com/user/htmlacademy"  alt="ссылка на страницу в ютуб"></a>
+      <a class="footer__soclink footer__soclink--youtube" href="https://youtube.com/user/htmlacademy"></a>
     </li>
   </ul>
   <div class="copyright">
     <a class="copyright__link" href="https://htmlacademy.ru/">
       Разработано
-      <svg class="copyright__img" width="27" height="35">
-        <use xlink:href="img/sprite.svg#htmlacademy"></use>
+      <svg class="copyright__img" width="27" height="35" role="img" aria-label="Логотип HTML Academy">
+        <use href="#htmlacademy"></use>
       </svg>
     </a>
   </div>
