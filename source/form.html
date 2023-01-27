@@ -12,6 +12,8 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 <body class="page-body">
   <svg style="display: none;">
@@ -48,13 +50,13 @@
       </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            <a class="main-nav__link  main-nav__link--active" href="form.html">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="https://htmlacademy.ru">Html academy</a>
@@ -159,27 +161,27 @@
 </main>
 <footer class="footer">
   <div class="footer__hashtag">
-    <a class="footer__hashtag--link" alt="хештег посетите Седону">#visitsedona</a>
+    <a class="footer__hashtag-link">#visitsedona</a>
   </div>
   <ul class="footer__social footer__soclist">
     <li class="footer__socitem">
       <span class="visually-hidden">ссылка на страницу вконтакте</span>
-      <a class="footer__soclink footer__soclink--vk" href="https://vk.com/htmlacademy" alt="ссылка на страницу вконтакте"></a>
+      <a class="footer__soclink footer__soclink--vk" href="https://vk.com/htmlacademy"></a>
     </li>
     <li class="footer__socitem">
       <span class="visually-hidden">ссылка на страницу телеграм</span>
-      <a class="footer__soclink footer__soclink--telegram" href="https://t.me/htmlacademy" alt="ссылка на страницу в телеграмме"></a>
+      <a class="footer__soclink footer__soclink--telegram" href="https://t.me/htmlacademy"></a>
     </li>
     <li class="footer__socitem">
       <span class="visually-hidden">ссылка на страницу ютуб</span>
-      <a class="footer__soclink footer__soclink--youtube" href="https://youtube.com/user/htmlacademy"  alt="ссылка на страницу в ютуб"></a>
+      <a class="footer__soclink footer__soclink--youtube" href="https://youtube.com/user/htmlacademy"></a>
     </li>
   </ul>
   <div class="copyright">
     <a class="copyright__link" href="https://htmlacademy.ru/">
       Разработано
-      <svg class="copyright__img" width="27" height="35">
-        <use xlink:href="img/sprite.svg#htmlacademy"></use>
+      <svg class="copyright__img" width="27" height="35" role="img" aria-label="Логотип HTML Academy">
+        <use href="#htmlacademy"></use>
       </svg>
     </a>
   </div>
